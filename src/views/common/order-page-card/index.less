@@ -1,0 +1,156 @@
+
+
+@keyframes myfirst {
+    0% {
+        left: 0px;
+        bottom: -958px;
+    }
+    100% {
+        left: 0px;
+        bottom: 0px;
+    }
+}
+
+
+
+.card_page_wrap {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    .card_main {
+        animation:myfirst 1s ease 0s 1;  
+        height: 958px;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        border-radius: 10px 10px 0px 0px;
+        .card_title {
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            .card_name {
+                color: #666666;
+            }
+            .card_icon {
+                float: right;
+                margin-right: 36px;
+                font-size: 21px;
+            }
+            .card_icon::before {
+                font-size: 21px;
+                line-height: 100px;
+                content: "\e67c";
+                color: #333333;
+            }
+        }
+        .did_user {
+            padding: 0 32px;
+            .am-list-item {
+                display: flex;
+                flex-direction: row-reverse;
+                .am-list-thumb {
+                    margin-right: 42px;
+                    .am-checkbox-wrapper {
+                        .am-checkbox-checked {
+                            .am-checkbox-inner {
+                                background: #ff2d51;
+                                border: none;
+                            }
+                            .am-checkbox-inner:after {
+                                top: 6px;
+                                right: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .card_line {
+            padding: 24px 32px 0;
+            height: 654px;
+            overflow-y: scroll;
+            .card_ones {
+                height: 186px;
+                background: url("../../../assets/images/env-bg.jpg") no-repeat;
+                background-size: 100%;
+                background-position: 0 -200px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 24px;
+                .card_left {
+                    width: 178px;
+                    text-align: center;
+                    margin-top: 22px;
+                    .card_money {
+                        color: #ff2d51;
+                        font-size: 38px;
+                        .card_pirce {
+                            font-size: 68px;
+                            font-weight: bold;
+                        }
+                    }
+                    .card_rules {
+                        margin-top: 15px;
+                    }
+                }
+                .card_right {
+                    min-width: 417px;
+                    flex: 1;
+                    margin-left: 24px;
+                    .am-list-item {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        padding: 0;
+                        .am-list-thumb {
+                            .am-checkbox-wrapper {
+                                .am-checkbox-checked {
+                                    .am-checkbox-inner {
+                                        background: #ff2d51;
+                                        border: none;
+                                    }
+                                    .am-checkbox-inner:after {
+                                        top: 6px;
+                                        right: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .card_describe {
+                        .card_limit {
+                            font-weight: bold;
+                            margin-top: 10px;
+                        }
+                        .card_limit_direct {
+                            color: #999999;
+                            font-size: 26px;
+                        }
+                        .card_times {
+                            color: #999999;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        .must-sure {
+            width: 686px;
+            height: 80px;
+            background: linear-gradient(
+                0deg,
+                rgba(242, 12, 0, 1) 0%,
+                rgba(255, 45, 81, 1) 100%
+            );
+            box-shadow: 0px 4px 35px 0px rgba(242, 13, 3, 0.4);
+            border-radius: 40px;
+            color:#fff;
+            margin:0 auto;
+            line-height: 80px;;
+        }
+    }
+}

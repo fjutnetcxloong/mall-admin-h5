@@ -1,0 +1,219 @@
+@import "~style";
+
+.MyEvaluate{
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .navbar .nav-left .icon-left:before {
+        content: '\E646';
+        color: @darker-black;
+    }
+    .navbar .nav-right .icon-right:before {
+        content: '';
+    }
+    .appraise{
+        margin-bottom: 20px;
+        .trade-box {
+            padding: 30px 30px 0 30px;
+            background-color: @white;
+            .trade-name {
+                padding-bottom: 30px;
+                display: flex;
+                //border-bottom: 1px solid @to-light-gray;
+                .hairline('bottom',@to-light-gray);
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .side-margin {
+            padding: 0 30px;
+            padding-bottom: 20px;
+            //border-bottom: 1px solid @to-light-gray;
+            .hairline('bottom',@to-light-gray);
+            box-sizing: border-box;
+            background: @white;
+            .describes{
+                margin-bottom: 40px;
+                border-top:1px solid @light-gray;
+                // .hairline('top', @light-gray);
+                .describe-text{
+                    margin-bottom: 26px;
+                }
+                .am-list-item{
+                    border: @list-border;
+                    border-radius: 20px;
+                    align-items: flex-start;
+                    // padding: 30px 40px;
+                    height: 180px;
+                    .am-textarea-control textarea{
+                        font-size: @font-size-28;
+                        line-height:40px;
+                    }
+                }
+            }
+            .am-textarea-control textarea {
+                padding: 0;
+            }
+        }
+    }
+    .Comment-content {
+        margin-top: -20px;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        background-color: @white;
+    }
+    .anonymous {
+        padding: 40px 0 30px 0;
+        .am-radio {
+            margin: 0 22px 0 -2px ;
+        }
+    }
+    .score {
+        padding: 44px 0 30px 0;
+        display: flex;
+        justify-content: space-between;
+        .score-left {
+            color: @darker-black;
+            margin-top: 16px;
+            font-size: @font-size-28;
+        }
+        .stars:before {
+            content: '\E637';
+            color: @duckling-yellow;
+            font-size: @font-size-46;
+        }
+        .starsRight:before {
+            content: '\E637';
+            color: @light-gray;
+            font-size: @font-size-46;
+        }
+    }
+    .Release {
+        margin: 40px 45px 47px 45px;
+        line-height: 100px;
+        background-color: @fiery-red;
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        .Release-right {
+            color: @white;
+            font-size: @font-size-36;
+        }
+    }
+    .am-radio-inner {
+        border-radius: 50%;
+        border: 1px solid @gray;
+        // .hairline('all', @gray);
+    }
+    .am-radio.am-radio-checked .am-radio-inner {
+        border: 1px solid @gray;
+        // .hairline('all', @gray);
+    }
+    .choice {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        .am-radio {
+            top: -4px;
+            margin-right: 20px;
+        }
+    }
+    .am-image-picker-list {
+        padding: 1px 0 0;
+    }
+    .am-image-picker-list .am-image-picker-upload-btn {
+        border-radius: 14px;
+    }
+    .am-radio-inner,.am-radio {
+        width: 26px;
+        height: 26px;
+    }
+    .am-radio-inner:after {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) !important;
+        width: 16px;
+        height: 16px;
+        background: @fiery-red;
+        border-radius: 50%;
+        border-width: 0;
+    }
+    .img-list{
+        
+    .picture-area {
+        width: 100%;
+        margin-top: 12px;
+        overflow: hidden;
+        ul {
+            li {
+                float: left;
+                position: relative;
+                margin: 7px;
+                span {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 26px;
+                    text-align: center;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    color: @light-white;
+                    background: @light-black;
+                }
+                img {
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 10px;
+                }
+            }
+            .imgAdd-button {
+                width: 140px;
+                height: 140px;
+                background: @white;
+                border: 1px solid #e5e5e5;
+                // .hairline('all', #e5e5e5);
+                border-radius: 10px;
+                position: relative;
+                span {
+                    margin: 0 auto;
+                    display: inline-block;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    color: #FF5774;
+                    line-height: 44px;
+                    text-align: center;
+                    background: @white;
+                    font-size: 44px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: -24px 0 0 -24px;
+                }
+            }
+        }
+    }
+    }
+}
+.MyEvaluate .describes .am-list-item {
+    border: 0!important;
+    border-radius: 0!important;
+    // padding: 30px 0!important;
+}
+.MyEvaluate .upload-img .img-list .am-flexbox{
+ padding: 1px;
+}
+.contents{
+    margin-top: 20px;
+}
+
+

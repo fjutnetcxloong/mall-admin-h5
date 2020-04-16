@@ -1,0 +1,53 @@
+@import "~style";
+.regional {
+    width:100%;
+    line-height: 88px!important;
+    text-align: right;
+    //padding: 0 30px;
+    //.hairline('bottom',@to-light-gray);
+    margin-bottom: -4px;
+    height: 88px!important;
+    .gray-3 {
+        display: inline-block;
+        max-width: 160px;
+        //text-align: right;
+        overflow: hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+        color: @darker-black;
+        font-size: @font-size-28;
+    }
+    .gray-3 div:nth-child(1) div {
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        word-break: break-all;
+        display: block;
+    }
+    .gray-3 div:nth-child(1) div {
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        word-break: break-all;
+        display: block;
+    }
+}
+.inline{
+    display: inline-block;
+}
+.picker-inline {
+    //height: 88px;
+    display: inline-block;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    font-size: @font-size-28;
+    color: #bbb;
+    width: 100%;
+    margin-right: 0px;
+    //margin-left: 10px;
+}

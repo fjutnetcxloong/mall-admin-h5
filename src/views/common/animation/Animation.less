@@ -1,0 +1,35 @@
+@import "~style";
+.canvas-drawing {
+    width: 33%;
+    height: 220px;
+    margin: 0;
+    margin-top: -100px;
+}
+.canvas-mask{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    .canvas-contain{
+        position: absolute;
+        left: 0;
+        top: 45%;
+        right: 0;
+        z-index: 10001;
+        .canvas-load-contain{
+            margin: 0 auto;
+        }
+    }
+
+}
+//骨架屏动画
+.skelon{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    height: 100vh;
+}

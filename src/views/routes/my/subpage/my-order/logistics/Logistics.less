@@ -1,0 +1,200 @@
+@import "~style";
+
+.logistics {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .status {
+        display: flex;
+        height: 140px;
+        width: 660px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background: @white;
+        border: 1px solid #e5e5e5;
+        // .hairline('all', #e5e5e5);
+        box-shadow: 0 0 30px 0 rgba(255, 87, 116, 0.3);
+        border-radius: 20px;
+        top: 128px;
+        padding: 20px 30px;
+        background: @white;
+        font-size: @font-size-30;
+        color: @darker-black;
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .info {
+            padding: 0;
+            margin-left: 30px;
+            .info-num{
+                width: 320px;
+                // text-overflow:ellipsis;
+                // white-space:nowrap;
+                .TextareaOverflow(1);
+                font-size: @font-size-20;
+            }
+            .info-status {
+                margin-bottom: 30px;
+            }
+        }
+
+        .phone {
+            flex: 0 0 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .icon-phone:before {
+                content: '\e639';
+                color: @fiery-red;
+            }
+
+            .phone-num {
+                font-size: @font-size-20;
+                color: #000;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .address {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 660px;
+        //height:153px;
+        background: @white;
+        border: 1px solid #e5e5e5;
+        // .hairline('all', #e5e5e5);
+        box-shadow: 0 0 30px 0 rgba(255, 87, 116, 0.3);
+        border-radius: 20px 20px 0 0;
+        max-height: 800px !important;
+        overflow: auto;
+    }
+
+    .icon-hand:before {
+        content: '\e654';
+        color: @fiery-red;
+    }
+
+    .icon-hold:before {
+        content: '\e658';
+        color: red;
+        position: absolute;
+        right: -10px;
+        top: -10px;
+    }
+
+    .am-accordion-header{
+        height: 160px !important;
+        width: 660px !important;
+        padding-top: 35px !important;
+        box-sizing: border-box !important;
+    }
+    .arrow{
+        display: none !important;
+    }
+    .header-wrapper{
+        display: flex;
+        height: 125px;
+        .header-left{
+            flex: 0 0 132px;
+            width: 132px;
+            border-right: 5px solid #f2f2f2;
+            height: 120px;
+            margin: 12px 30px 0 0 ;
+        }
+        .circular {
+            width: 22px;
+            height: 22px;
+            background:#bfbfbf;
+            border-radius:50%;
+            position: fixed;
+            top: 46px;
+            left: 148px;
+        }
+        .header-right{
+            flex: 1;
+            font-size: @font-size-28;
+            color: @darker-black;
+            line-height: 42px;
+            white-space: initial;
+        }
+    }
+
+    .am-accordion-header::after {
+        height: 0!important;
+    }
+    .am-accordion-content {
+        width: 660px;
+    }
+    .logistics-box {
+        height: 176px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        position: relative;
+        .logistics-left {
+            width: 132px;
+            border-right: 5px solid #f2f2f2;
+            text-align: right;
+            padding: 24px 30px 0 0;
+            .time {
+                color: @dark-gray;
+                font-size: @font-size-24;
+                margin-bottom: 15px;
+            }
+            .date {
+                color: @gray;
+                font-size: @font-size-20;
+            }
+        }
+        .dot {
+            width: 22px;
+            height: 22px;
+            background:#bfbfbf;
+            border-radius:50%;
+            position: absolute;
+            top: 26px;
+            left: 148px;
+        }
+        .logistics-right {
+            flex: 1;
+            padding: 20px 0 0 30px ;
+            .collect {
+                font-size: @font-size-28;
+                color: @darker-black;
+                margin-bottom: 15px;
+                background-color: @white;
+            }
+            .news {
+                color: @gray;
+                font-size: @font-size-24;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    .address > List > .logistics-left:last-child {
+        border-right: none;
+    }
+}

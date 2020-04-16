@@ -1,0 +1,151 @@
+@import "~style";
+.Payment-completed {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    .wrapTabNav {
+        .navbar {
+            .blackNav-right {
+                .icon-right:before {
+                    content: '\E675';
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .finish {
+        padding: 101px 0 80px 0;
+        background-color: @white;
+        border-top:1px solid #EDEDED;
+        img {
+            width: 127px;
+            height: 124px;
+            margin-left:325px;
+
+        }
+        .finish-bottom {
+            font-size: @font-size-36;
+            color: @fiery-red;
+            text-align: center;
+            margin-top:79px;
+        }
+    }
+
+    .bill {
+        padding: 0 45px;
+        background-color: @white;
+        width:660px;
+        .frame-success {
+            width:660px;
+            padding: 35px 0 44px;
+            .hairline('top',#EDEDED);
+            .bill-top {
+                display: flex;
+                justify-content: space-between;
+                color: @dark-gray;
+                font-size: @font-size-30;
+            }
+            .center {
+                margin: 28px 0;
+            }
+        }
+        .frame-jd {
+            width:660px;
+            padding: 35px 0 37px;
+            //border-top: 1px solid  #EDEDED;
+            .hairline('top',#EDEDED);
+            .hairline('bottom',#EDEDED);
+            margin-bottom:74px;
+            .bill-top {
+                display: flex;
+                justify-content: space-between;
+                color: @dark-gray;
+                font-size: @font-size-30;
+            }
+            .center {
+                margin: 28px 0;
+            }
+        }
+    }
+
+    .red-env{
+        width:660px;
+        height:160px;
+        background:url('../../../../../../assets/images/env-bg.jpg') no-repeat;
+        background-size:100%;
+        margin:0 51px 0 37px;
+        display: flex;
+        .env-money{
+            font-size:80px;
+            line-height: 160px;
+            color:#fff;
+            span{
+                font-size: 44px;
+            }
+        }
+        .env-main{
+            line-height: 40px;
+            margin-left:118px;
+            margin-top:38px;
+            span{
+                color:#666666;
+                font-size: 24px;
+                .my-coupon{
+                    color:#FF2D51;
+                    margin:0 15px 0 11px;
+                }
+                .my-coupon::after{
+                    content: '\E643';
+                    font-size:9px;
+                    margin-left:9px;
+                }
+            }
+        }
+    }
+
+    .remider{
+        width:440px;
+        height:98px;
+        margin: 0 auto;
+        padding-top:46px;
+        text-align: center;
+        span{
+            color:#666;
+            font-size: 28px;
+            line-height: 36px;
+        }
+        p{
+            color:#999;
+            line-height: 36px;
+            font-size: 24px;
+            text-indent:20px;
+        }
+    }
+
+    .instructions {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 48px 80px;
+        position: fixed;
+        bottom: 0;
+        .see, .return {
+            width:280px;
+            height:80px;
+            background: @white;
+            border-radius:40px;
+            text-align: center;
+            line-height: 80px;
+        }
+        .see {
+            border:2px solid @dark-gray;
+            color:#666666;
+        }
+        .return {
+            color: @fiery-red;
+            border:2px solid @fiery-red;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+@import "~style";
+.individual-two {
+    .step-box-clear{
+        margin-top: 0 !important;
+    }
+    .step-box {
+        //.step:nth-child(1) {
+        //    .line {
+        //        border: 1px dashed @fiery-red;
+        //    }
+        //}
+        .step:nth-child(2) {
+            span:nth-child(1) {
+                border: 2px solid @fiery-red;
+                background:@fiery-red ;
+                color: @white;
+            }
+            span:nth-child(2) {
+                color:@fiery-red ;
+            }
+        }
+        .dotted {
+            .am-flexbox-item:nth-child(1) {
+                border: 1px dashed @fiery-red;
+                // .hairline('all', @fiery-red);
+            }
+        }
+    }
+
+    .ID-photo {
+        padding: 39px 33px;
+        background: @white;
+        margin-bottom: 20px;
+        .start {
+            font-size: @font-size-30;
+            color: @darker-black;
+            margin-bottom: 41px;
+        }
+        .upload-box {
+            width: 610px;
+            height: 360px;
+            padding: 6px;
+            border:2px dashed #bfbfbf;
+            box-shadow:0 6px 32px 0 rgba(51,51,51,0.15);
+            border-radius:30px;
+            margin: 0 auto 60px;
+            position: relative;
+            .picture-area{
+                img{
+                    width:580px;
+                    height:3.36rem;
+                    position: absolute;
+                    top:0.1rem;
+                    left:0.14rem;
+                    border-radius: 10px;
+                }
+                .imgAdd-button{
+                    width:96%;
+                    height:3.38rem;
+                    position: absolute;
+                    top:1px;
+                    left:0.1rem;
+                    border-radius: 0.3rem;
+                    background: @white;
+                    border: 1px solid #e5e5e5;
+                    // .hairline('all', #e5e5e5);
+                    border-radius: 10px;
+                    position: relative;
+                    .imgAdd-icon{
+                        margin: 0 auto;
+                        display: inline-block;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+                        font-weight: 1;
+                        line-height: 44px;
+                        text-align: center;
+                        background: @white;
+                        font-size:100px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                    }
+                }
+                .delete-icon{
+                    margin-left:280px;
+                    z-index:2;
+                    color:@white;
+                    background:@dark-gray;
+                    border-radius: 50%;
+                    padding:0 4px 4px;
+                    margin-bottom:260px;
+                }
+            }
+            span {
+                position: absolute;
+                left: 50%;
+                bottom: 10%;
+                transform:translate(-50%,-50%);
+                color: @gray;
+            }
+        }
+        .am-wingblank {
+            margin: 0;
+            .am-image-picker {
+                .am-image-picker-list {
+                    padding: 0;
+                    margin: 0;
+                    .am-flexbox {
+                        margin: 0;
+                        .am-flexbox-item {
+                            height: 340px;
+                            margin: 0 4px;
+                            .am-image-picker-item {
+                                height: 338px;
+                                top: 171px;
+                                border-radius: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,162 @@
+@import "~style";
+.inspect-order {
+    .wrapTabNav {
+        margin-bottom: 20px;
+        .navbar {
+            background: @fiery-red;
+            .icon-left:before, .icon-right:before, .blackNav-title{
+                color: @white;
+            }
+        }
+        .rightSearch {
+            position: absolute;
+            right: 80px;
+            .icon-rightSearch:before {
+            }
+        }
+    }
+
+    .shortcut {
+        display: flex;
+        justify-content: space-between;
+        line-height: 90px;
+        padding: 0 50px;
+        background: @white;
+        margin-bottom: 20px;
+        span:nth-child(1) {
+            color: @darker-black;
+            font-size: @font-size-32;
+            font-family:PingFang-SC-Bold;
+            font-weight:bold;
+        }
+        .icon-shortcut:before {
+            color: @fiery-red;
+            content: '\E656';
+            font-size: @font-size-48;
+        }
+    }
+    .indent-box {
+        padding: 0 30px;
+        margin-bottom: 20px;
+        .indent {
+            padding: 31px 21px;
+            background: @white;
+            border-radius: 20px;
+            .picture {
+                display: flex;
+                justify-content: space-between;
+                font-size: @font-size-30;
+                line-height: 72px;
+                margin-bottom: 30px;
+                img {
+                    width: 72px;
+                    height: 72px;
+                    border-radius: 50%;
+                    margin-right: 31px;
+                }
+                span:nth-child(2) {
+                    color: @darker-black;
+                    flex: 1;
+                }
+                span:nth-child(3) {
+                    font-weight:bold;
+                    color: @fiery-red;
+                }
+            }
+
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 240px;
+                height: 240px;
+                border-radius: 10px;
+            }
+            .content-right {
+                flex: 1;
+                margin-left: 22px;
+                //text-align: right;
+                .value {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: @font-size-30;
+                    color: @darker-black;
+                    span:nth-child(1) {
+                        overflow: hidden;
+                        -webkit-line-clamp:2;
+                        display: -webkit-box;
+                        -webkit-box-orient:vertical;
+                        flex: 1;
+                    }
+                    span:nth-child(2) {
+                        font-weight:bold;
+                        margin-left: 20px;
+                    }
+                }
+                .specification {
+                    margin: 10px 0 6px;
+                    color: @gray;
+                    font-size: @font-size-20;
+                    span {
+                        margin-right: 20px;
+                    }
+                }
+                .accounts {
+                    font-size: @font-size-20;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 90px;
+                    span:nth-child(1) {
+                        padding: 2px 16px;
+                        border:1px solid @fiery-red;
+                        // .hairline('all', @fiery-red);
+                        background:linear-gradient(0deg,@fiery-red 0%,@garnet-red 100%);
+                        border-radius:50px;
+                        color: @white;
+                    }
+                    span:nth-child(2) {
+                        color: @gray;
+                    }
+                }
+            }
+        }
+        .altogether {
+            font-size: @font-size-26;
+            color: @darker-black;
+            margin-bottom: 19px;
+            text-align: right;
+            span {
+                color: @fiery-red;
+                font-weight:bold;
+            }
+        }
+        .total {
+            font-size: @font-size-26;
+            color: @darker-black;
+            text-align: right;
+            margin-bottom: 30px;
+            span:nth-child(2) {
+                margin-left: 20px;
+                span {
+                    font-size: @font-size-34;
+                    vertical-align: text-top;
+                }
+            }
+        }
+        .immediately {
+            text-align: right;
+            span {
+                text-align: right;
+                padding: 8px 23px;
+                color: @fiery-red;
+                border: 1px solid @fiery-red;
+                // .hairline('all', @fiery-red);
+                border-radius: 50px;
+                font-size: @font-size-24;
+            }
+        }
+    }
+
+}

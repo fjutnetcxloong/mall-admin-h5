@@ -1,0 +1,160 @@
+@import "~style";
+
+.home-bar {
+    width: 100%;
+    height: 230px;
+    .shade {
+        height: 230px;
+        //opacity: 1;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        background-size: 100% 100% !important;
+    }
+    .jd-shade {
+        background: linear-gradient(0deg, #ff2d51 0%, #f20c00 100%);
+    }
+    .home-bar-top,
+    .home-bar-top-jd {
+        width: 100%;
+        height: 230px;
+        // background: url();
+        background: rgba(0, 0, 0, 0.6);
+        padding: 0 @padding-wingBlank;
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        .bar-top {
+            width: 100%;
+            padding-top: 22px;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            .bar-icon-left,
+            .bar-icon-right {
+                padding-top: 6px;
+                position: relative;
+                z-index: 199999999;
+            }
+            .bar-icon-left:before {
+                content: "\E646";
+                color: @white;
+            }
+            .bar-icon-right:before {
+                content: "\E63b";
+                color: @white;
+            }
+            .home-search {
+                float: right;
+                width: 570px;
+                height: 60px;
+                border-radius: 30px;
+                background: @white;
+                padding: 0 30px;
+                padding-top: 2px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: end;
+                .icon-search {
+                    margin-right: 21px;
+                }
+                .icon-search:before {
+                    content: "\E644";
+                    font-size: 36px;
+                }
+                .search-title {
+                    line-height: 56px;
+                    font-size: 24px;
+                    color: @dark-gray;
+                }
+            }
+        }
+    }
+    .home-bar-top-jd {
+        background: none;
+    }
+    .home-bar-bottom {
+        width: 100%;
+        height: 72px;
+        margin-top: 54px;
+        display: flex;
+        justify-content: space-between;
+        .home-logo {
+            float: left;
+            width: 72px;
+            height: 72px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                width: 72px;
+                height: 72px;
+            }
+        }
+        .home-title {
+            float: left;
+            height: 72px;
+            .home-icons {
+                //margin-top: -16px;
+                margin-bottom: 4px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .text {
+                    font-weight: @font-weight-bold;
+                    color: @white;
+                    .TextareaOverflow(1);
+                    margin-right:10px;
+                }
+                .icon-tiny:before {
+                    content: "\E637";
+                    color: @duckling-yellow;
+                    font-size: 26px;
+                }
+                .icon-tiny{
+                    line-height: 45px;
+                }
+                .icon-ban:before {
+                    content: "\e638";
+                    color: @duckling-yellow;
+                    font-size: 26px;
+                }
+            }
+            .home-text {
+                color: @white;
+                width: 370px;
+                .TextareaOverflow(1);
+                /*.text{
+                    font-weight: @font-weight-bold;
+                    margin-right: 18px;
+                }*/
+                .text-num {
+                    font-size: 24px;
+                }
+                .reatIng {
+                    display: inline-block;
+                    padding: 0.04rem 0.16rem;
+                    border-radius: 0.2rem;
+                    font-size: 12px;
+                    background: @light-gray;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .collection {
+            width: 140px;
+            height: 50px;
+            border-radius: 100px;
+            text-align: center;
+            line-height: 50px;
+            color: @white;
+            font-size: @font-size-24;
+        }
+    }
+    .WXce {
+        margin: 0 auto;
+        width: 100% !important;
+    }
+}

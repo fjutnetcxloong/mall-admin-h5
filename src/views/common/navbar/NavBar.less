@@ -1,0 +1,123 @@
+@import "~style";
+
+
+.wrapTabNav{
+    height:0.88rem;
+}
+.navbar{
+    width: 100%;
+    height: 88px;
+    background: @white;
+    padding: 16px 32px;
+    text-align: center;
+    font-weight: @font-weight-bold;
+    box-sizing: border-box;
+    //border-bottom: @list-border;
+    //.hairline('bottom',@to-light-gray);
+    z-index: 2;
+    position:fixed;
+    top:0;
+    left:0;
+    .nav-left{
+        float: left;
+        width: 50px;
+        height: 50px;
+        .icon-left:before{
+            font-size: @font-size-44;
+            color: @white;
+            content: '\e646';
+        }
+    }
+    .nav-title{
+        text-align: center;
+        line-height: 55px;
+        font-size: 38px;
+        color: @white;
+    }
+    .rightSearch {
+        // display: inline-block;
+        float: right;
+        width: 50px;
+        height: 50px;
+        // .icon-rightSearch:before {
+        //     font-size: @font-size-44;
+        //     color: #000;
+        //     content: '\E644';
+        // }
+        .icon-rightSearch:before {
+            font-size: @font-size-44;
+            color: #999;
+            content: '\E644';
+        }
+    }
+    .rightExplain {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        color: @link-color;
+        font-size: @font-size-26;
+        font-weight: 500;
+    }
+    .right-edit {
+        position: absolute;
+        right: 0;
+        //width: 100px;
+        //height: 50px;
+    }
+    .nav-search{
+        float: right;
+        width: 50px;
+        height: 50px;
+        line-height: 57px;
+        //margin-top: 10px;
+        margin-right:10px;
+        .icon-search:before{
+            font-size: @font-size-44;
+            color:@white;
+            content: '\e644';
+            font-weight: 500;
+        }
+    }
+    .nav-right{
+        float: right;
+        width: 50px;
+        height: 50px;
+        .icon-right:before{
+            font-size: @font-size-44;
+            color:@white;
+            content: '\E675';
+            font-weight: 500;
+        }
+    }
+    .blackNav-left{
+        position: absolute;
+        left: 30px;
+        width: 50px;
+        height: 50px;
+        .icon-left:before{
+            font-size: @font-size-44;
+            color:@darker-black;
+            content: '\e646';
+        }
+    }
+    .blackNav-title{
+        text-align: center;
+        line-height: 55px;
+        font-size: 38px;
+        color: @darker-black;
+    }
+    .blackNav-right{
+        //float: right;
+        position: absolute;
+        right: 30px;
+        top: 16px;
+        width: 50px;
+        height: 50px;
+        .icon-right:before{
+            font-size: @font-size-44;
+            color:@darker-black;
+            content: '\e63d';
+            font-weight: 500;
+        }
+    }
+}

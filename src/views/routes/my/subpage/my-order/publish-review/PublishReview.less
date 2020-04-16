@@ -1,0 +1,134 @@
+@import "~style";
+.publish-review {
+    //公共内边距
+    .shared-margin {
+        padding: 0 30px;
+        background: @white;
+        
+        .picture-area {
+            width: 100%;
+            margin-top: 12px;
+            overflow: hidden;
+            ul {
+                li {
+                    float: left;
+                    position: relative;
+                    margin: 7px;
+                    span {
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 26px;
+                        text-align: center;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        color: @light-white;
+                        background: @light-black;
+                    }
+                    img {
+                        width: 140px;
+                        height: 140px;
+                        border-radius: 10px;
+                    }
+                }
+                .imgAdd-button {
+                    width: 140px;
+                    height: 140px;
+                    background: @white;
+                    border: 3px solid #e5e5e5;
+                    border-radius: 10px;
+                    position: relative;
+                    span {
+                        margin: 0 auto;
+                        display: inline-block;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+                        color: #FF5774;
+                        line-height: 44px;
+                        text-align: center;
+                        background: @white;
+                        font-size: 44px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin: -24px 0 0 -24px;
+                    }
+                }
+            }
+        }
+    }
+    .shared-margin-box {
+        background: @back-color;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        z-index: 111;
+    }
+    .commodity {
+        display: flex;
+        padding: 24px 0;
+        border-bottom: 1px solid @to-light-gray;
+        // .hairline('bottom', @to-light-gray);
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 4px;
+            margin-right: 32px;
+        }
+        .commodity-right {
+            flex: 1;
+            font-size: @font-size-30;
+            color: @darker-black;
+            margin-top: 13px;
+        }
+    }
+
+    .am-list {
+        .am-list-body {
+            .am-list-item {
+                padding: 0;
+                .am-textarea-control {
+                    height: 186px;
+                    textarea {
+                        font-size: @font-size-28;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+        .am-list-body:before ,.am-list-body:after {
+            height: 0;
+        }
+    }
+
+    .am-wingblank {
+        padding-bottom: 40px;
+        margin: 60px 0 0 0 ;
+        .am-image-picker {
+            .am-image-picker-list {
+                padding: 0;
+                margin: 0;
+                .am-image-picker-item {
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .button-box {
+        margin-top: 20px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background: @white;
+        .button {
+            text-align: center;
+            position: relative;
+            top: 1174px;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@import "~style";
+.roll-out {
+    .wrapTabNav {
+        margin-bottom: 20px;
+    }
+    .import-box {
+        padding: 80px 45px 66px 45px;
+        background: @white;
+        .import-UID {
+            display: flex;
+            line-height: 100px;
+            margin-bottom: 20px;
+            .am-list {
+                margin-right: 36px;
+                .am-list-body {
+                    width: 529px;
+                    position: relative;
+                    height: 100px;
+                    .am-list-item {
+                        height: 100px;
+                        border: 1px solid #E5E5E5;
+                        border-radius: 100px;
+                    }
+                    .am-list-item .am-input-control input{
+                        padding: 5px 0;
+
+                    }
+                    input::placeholder {
+                        //vertical-align: sub;
+                        padding-top: 5px;
+                    }
+                }
+                .am-list-body:before, .am-list-body:after{
+                    height: 0!important;
+                }
+            }
+            .icon-scan {
+                width: 100px;
+                height: 100px;
+            }
+            .icon-scan:before {
+                content: '\E656';
+                font-size: @font-size-100;
+                color: @fiery-red;
+            }
+        }
+        .general-other{
+            .am-list {
+                .am-list-body {
+                    .am-list-item {
+                        border: 1PX solid #E5E5E5;
+                    }
+                }
+            }
+        }
+        span {
+            font-size: @font-size-24;
+            color: @gray;
+            margin-left: 40px;
+        }
+        .important {
+            text-align: center;
+            color: @white;
+            font-size: @font-size-36;
+            margin-top: 60px;
+            box-shadow: none;
+        }
+    }
+    .transfer {
+        position: absolute;
+        top: 560px;
+        bottom: 0;
+        background: @white;
+        width: 100%;
+        padding: 0 30px;
+        height: fit-content;
+        .record {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            background: @white;
+            span:nth-child(1) {
+                font-size: @font-size-36;
+                color: @darker-black;
+            }
+            span:nth-child(2) {
+                font-size: @font-size-30;
+                color: @fiery-red;
+            }
+        }
+        .message {
+            display: flex;
+            padding: 30px 0;
+            .hairline('bottom',@to-light-gray);
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-right: 31px;
+            }
+            .message-bottom {
+                color: @darker-black;
+                font-size: @font-size-26;
+                div:nth-child(1){
+                    margin: 24px 0 18px;
+                }
+            }
+        }
+    }
+    .transfer-clear{
+        top:460px !important;
+    }
+    .piteraTake{
+        width: 100%;
+        text-align: center;
+        margin-top: 60px;
+        font-size: @font-size-28;
+        color: @dark-gray;
+    }
+}
+

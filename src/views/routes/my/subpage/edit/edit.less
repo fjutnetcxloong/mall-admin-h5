@@ -1,0 +1,277 @@
+@import "~style";
+.edit-add{
+    background: @back-color;
+    .wrapTabNav {
+        .navbar {
+            .blackNav-right .icon-right:before {
+                content: '';
+            }
+        }
+    }
+    .nab{
+        font-size: @font-size-36;
+        color: @darker-black;
+        font-weight: @font-weight-bold;
+        height: 88px;
+        background: @white;
+    }
+    .banner{
+        display: flex;
+        margin-top: -5px;
+        justify-content: center;
+        font-family: @font-family;
+        font-size: @font-size-30;
+        font-weight: 500;
+        background: @dark-gray;
+        color: @white;
+        background: url("./../../../../../assets/images/bgbgg.png") 0 0 no-repeat;
+        background-size: 100% 380px;
+        .banner-center{
+            height: 380px;
+            text-align: center;
+            img{
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                display: block;
+                margin:65px auto 10px;
+            }
+            .my-name{
+                margin: 20px 0;
+            }
+            div{
+                margin: 20px 0;
+            }
+        }
+    }
+    .am-list-item .am-list-thumb:first-child {
+        width: 48px;
+        margin-left: 30px;
+        margin-right: 0;
+    }
+    .am-list-content{
+        font-size: @font-size-30 !important;
+        color: @darker-black;
+        font-weight: 500;
+        font-family: @font-family;
+    }
+    .pho{
+        .am-list-thumb{
+            img{
+                width: 33px;
+                height: 44px;
+            }
+        }
+    }
+    .pass{
+        .am-list-thumb{
+            img{
+                width: 41px;
+                height: 44px;
+            }
+        }
+    }
+    .see{
+        .am-list-thumb{
+            img{
+                width: 34px;
+                height: 44px;
+            }
+        }
+    }
+    .adr{
+        .am-list-thumb{
+            img{
+                width: 37px;
+                height: 44px;
+            }
+        }
+    }
+    .wec{
+        .am-list-thumb{
+            img{
+                width: 40px;
+                height: 37px;
+            }
+        }
+    }
+    .card{
+        .am-list-thumb{
+            img{
+                width: 44px;
+                height: 31px;
+            }
+        }
+    }
+    .am-list-body {
+        .not{
+            .am-list-line {
+                border-bottom: none !important;
+            }
+            .am-list-thumb{
+                img{
+                    width: 32px;
+                    height: 44px;
+                }
+            }
+        }
+    }
+    .am-list-extra{
+        font-size: @font-size-30;
+        color:#BFBFBF !important;
+        font-family: @font-family;
+    }
+    .sign-out {
+        padding: 40px 0;
+        background: @white;
+        .am-button{
+            color: @white;
+            font-size: @font-size-36;
+            font-family: @font-family;
+            background: @fiery-red;
+            width: 660px;
+            height: 100px;
+            margin: 0 auto;
+            border-radius: 100px;
+        }
+    }
+    .other{
+        flex-basis:10%;
+    }
+    .am-list-item .am-list-line {
+        padding-left: 30px;
+        position: relative;
+        .hairline('bottom', #ddd)!important;
+    }
+    .am-list-body::after {
+        height: 0 !important;
+    }
+    .pig-box,.phone-box,.lock-box,.before-box,.address-box,.binding-box,.bankCard-box,.locationarea-box,.news-box,.feedback-box,.about-box {
+        display: inline-block;
+        vertical-align: sub;
+        color: #333;
+    }
+    a{
+        color: #333;
+    }
+
+    .pig,.phone,.lock,.before,.address,.binding,.bankCard,.locationarea,.news,.feedback,.about {
+        margin-right: 28px;
+    }
+    .pig:before,.phone:before,.lock:before,.before:before,.address:before,.binding:before,.bankCard:before,.locationarea:before,.news:before,.feedback:before,.about:before {
+        color: @garnet-red;
+        font-size: 54px;
+    }
+    .area{
+        .am-list-extra{
+            flex-basis:60%;
+        }
+    }
+    .pig:before {
+        content: '\E650';
+    }
+    .phone:before {
+        content: '\E64e';
+    }
+    .lock:before {
+        content: '\E652';
+    }
+    .before:before {
+        content: '\E651';
+    }
+    .address:before {
+        content: '\E648';
+    }
+    .binding:before {
+        content: '\E653';
+    }
+    .bankCard:before {
+        content: '\E64b';
+    }
+    .locationarea:before {
+        content: '\E666';
+    }
+    .news:before {
+        content: '\E64f';
+    }
+    .feedback:before {
+        content: '\E655';
+    }
+    .about:before {
+        content: '\E654';
+    }
+    .am-list-body {
+        background: @back-color;
+    }
+    .am-list-item {
+        padding-left: 0;
+        cursor: pointer; 
+        -webkit-appearance: none;
+        .am-list-line{
+            cursor: pointer; 
+            -webkit-appearance: none;
+        }
+    }
+
+    .information {
+        .adr > .am-list-line {
+            border-bottom: none!important;
+        }
+    }
+    .bank-binding {
+        margin-top: 20px;
+        .card > .am-list-line {
+            border-bottom: none!important;
+        }
+    }
+    .announce {
+        margin: 20px 0;
+        .am-list-line {
+            border-bottom: none!important;
+        }
+    }
+    .problem {
+        transform: perspective(500);
+        .am-list-item:last-child {
+            transform: perspective(500);
+            //border-bottom: 1px solid #E6E6E6;
+            .hairline('bottom',#e6e6e6);
+        }
+    }
+    .logOut{
+        width:660px;
+        height:100px;
+        background: linear-gradient(180deg, @fiery-red 0%, @garnet-red 100%);
+        margin:20px auto;
+        border-radius: 50px;
+        color:@white;
+    }
+    .am-button::before {
+        border: none!important;
+    }
+    .am-list-line::after {
+        height: 0!important;
+    }
+
+    .margin {
+        margin-bottom: 20px;
+        .am-list-item:last-child {
+            .am-list-line {
+                border-bottom: none!important;
+            }
+        }
+    }
+    .margin-one {
+        margin: 20px 0;
+    }
+    .moredes{
+        margin-left:30px;
+        color:#BFBFBF;
+        font-size:30px;
+        a{
+            text-decoration:none;
+            pointer-events:none;
+            color:#BFBFBF;
+        }
+    }
+}

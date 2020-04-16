@@ -1,0 +1,48 @@
+@import "~style";
+
+.footer-bar {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow:0 0 10px 0 @to-light-gray;
+    .home::after {
+        content: '\E620';
+        font-size: @font-size-44;
+    }
+    .home-active::after {
+        content: '\E626';
+        font-size: @font-size-44;
+    }
+    .search::after {
+        content: '\E621';
+        font-size: @font-size-44;
+    }
+    .search-active::after {
+        content: '\E627';
+        font-size: @font-size-44;
+    }
+    .cate::after {
+        content: '\E622';
+        font-size: @font-size-44;
+    }
+    .cate-active::after {
+        content: '\E61e';
+        font-size: @font-size-44;
+    }
+    .cart::after {
+        content: '\E624';
+        font-size: @font-size-44;
+    }
+    .cate-active::after {
+        content: '\E61f';
+        font-size: @font-size-44;
+    }
+    .user::after {
+        content: '\E623';
+        font-size: @font-size-44;
+    }
+    .user-active::after{
+        content: '\E625';
+        font-size: @font-size-44;
+    }
+}

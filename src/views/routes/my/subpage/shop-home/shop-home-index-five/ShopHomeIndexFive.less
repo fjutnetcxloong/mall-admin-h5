@@ -1,0 +1,131 @@
+@import "~style";
+.shopHomeFiveContent{
+    padding-bottom: 100px;
+    width: 100%;
+    margin-bottom: 80px;
+    // background:#A92203;
+    position: relative;
+    //底部四张图片
+    .popular-one {
+        margin-bottom: 20px;
+        margin-top: 60px;
+        .popular-one-top {
+            margin-bottom: 20px;
+            height: 350px;
+            background-color: #a52f15;
+            text-align: right;
+            img {
+                width: 90%;
+                border: 0;
+            }
+        }
+        .popular-one-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .introduce-left{
+                .TextOverflow();
+            }
+        }
+    }
+    .popular-two-copy{
+        .popular-two-left{
+            .popular-two-left-top{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 315.2x;
+                &>div{
+                    width: 50%;
+                    background:#a52f15;
+                    height: 325.2px;
+                    text-align: center;
+                    .inner{
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        span{
+                            display: block;
+                            font-size: 43px;
+                            color: @white;
+                        }
+                        span:nth-child(2){
+                            font-size: 30px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .popular-two-left-bot{
+                width: 100%;
+                float: right;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 70px;
+                line-height: 70px;
+            }
+        }
+    }
+    .popular-three {
+        overflow: hidden;
+        margin-bottom: 40px;
+        .popular-three-left {
+            float: right;
+            width: 286px;
+            height: 280px;
+        }
+        .popular-three-right {
+            float: left;
+            margin-top: -211px;
+            img {
+                width: 551px;
+                height: 329px;
+                margin-bottom: 19px;
+            }
+            .introduce{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 60px;
+                line-height: 60px;
+            }
+            
+        }
+    }
+
+    .popular-four {
+        margin-bottom: 3px;
+        margin-top: 100px;
+        text-align: center;
+        position: relative;
+        .winter {
+            width: 85%;
+            margin: auto;
+            .popular-four-right {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .empty-container-four{
+            height:232px;
+            background:#a52f15;
+            position: absolute;
+            bottom: 90px;
+            width: 100%;
+            z-index: -1;
+        }
+        .introduce{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 60px;
+            height: 60px;
+        } 
+    }
+}
+

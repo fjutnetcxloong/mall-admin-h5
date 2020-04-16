@@ -1,0 +1,260 @@
+@import "~style";
+
+.ApplyServiceDetail {
+  height: 100vh;
+  .navbar {
+      //border-bottom: 1px solid #E0E0E0;
+      .hairline('bottom',#E0E0E0);
+  }
+  .icon-left:before {
+      content: '\E646';
+      color: @darker-black;
+  }
+
+  .address-box {
+      //border-bottom: 1px solid #E0E0E0;
+      //.hairline('bottom',#E0E0E0);
+      background: @white;
+      margin-top: 20px;
+      .address {
+          padding: 30px 50px;
+          font-size: @font-size-30;
+          color:@darker-black;
+          .shop-name {
+              margin-right: 30px;
+          }
+          .position-box {
+              margin-top: 20px;
+              .position {
+                  margin-right: 30px;
+                  line-height: 10px;
+              }
+          }
+      }
+  }
+
+  .am-list-body {
+      margin-top: 20px;
+  }
+  .am-input-control{
+      margin-bottom: 0;
+  }
+  .am-list-item .am-input-control input {
+      text-align: left;
+  }
+  .am-list-item .am-input-control input::placeholder {
+      text-align: left;
+  }
+  .am-list-item.am-input-item {
+      padding:0 50px;
+  }
+  .am-list-item .am-list-line {
+      padding: 0;
+  }
+  .am-list-item .am-input-label {
+      //border-right: 1px solid #E0E0E0;
+      .hairline('right',#e0e0e0);
+  }
+  .large-button{
+      margin-bottom: 20px;
+      .phone{
+          display: inline-block;
+          .icon-phone:before{
+              content: '\E639';
+              margin-right: 6px;
+          }
+      }
+  }
+  .large-button-text{
+      line-height: 90px;
+  }
+  .Apply-botton{
+      background: @white;
+      position: absolute;
+      bottom: 0;
+      top: 276px;
+      width: 100%;
+      .Apply-list{
+          width: 689px;
+          height: 100px;
+          margin: 0 auto;
+          margin-top: 40px;
+          overflow: hidden;
+          .Apply-list-text{
+              float: left;
+              line-height: 100px;
+              span{
+                  color: @garnet-red;
+              }
+          }
+          .Apply-list-select{
+              float: right;
+              width: 520px;
+              height: 100px;
+              border: @list-border;
+              border-radius: 50px;
+              overflow: hidden;
+              .Apply-picker{
+                  width: 100%;
+                  height: 100%;
+                  padding: 34px 40px;
+                  box-sizing: border-box;
+                  .icon-Apply-tight{
+                      float: right;
+                      margin-top: -9px;
+                  }
+                  .icon-Apply-tight:after{
+                      content: '\E643';
+                  }
+              }
+          }
+      }
+      .button{
+          width: 100%;
+          position: absolute;
+          bottom: 41px;
+      }
+  }
+}
+
+
+
+.JDLogistics {
+    height: 100vh;
+    .navbar {
+        //border-bottom: 1px solid #E0E0E0;
+        .hairline('bottom',#E0E0E0);
+    }
+    .icon-left:before {
+        content: '\E646';
+        color: @darker-black;
+    }
+  
+    .address-box {
+        //border-bottom: 1px solid #E0E0E0;
+        //.hairline('bottom',#E0E0E0);
+        background: @white;
+        margin-top: 20px;
+        .address {
+            padding: 30px 50px;
+            font-size: @font-size-24;
+            color:@darker-black;
+            .shop-name-box span:nth-child(2){
+                margin-right:20px;
+            }
+            .shop-name {
+                margin-right: 30px;
+            }
+            .position-box {
+                margin-top: 20px;
+                .position {
+                    margin-right: 30px;
+                    line-height: 10px;
+                }
+            }
+            .shop-info{
+                color:#FF2D51;
+                font-size: 24px;
+                margin-top:30px;
+            }
+        }
+    }
+  
+    .am-list-body {
+        margin-top: 20px;
+    }
+    .am-input-control{
+        margin-bottom: 0;
+    }
+    .am-list-item .am-input-control input {
+        text-align: left;
+    }
+    .am-list-item .am-input-control input::placeholder {
+        text-align: left;
+    }
+    .am-list-item.am-input-item {
+        padding:0 50px;
+    }
+    .am-list-item .am-list-line {
+        padding: 0;
+    }
+    .am-list-item .am-input-label {
+        //border-right: 1px solid #E0E0E0;
+        .hairline('right',#e0e0e0);
+    }
+    .large-button{
+        margin-bottom: 20px;
+        .phone{
+            display: inline-block;
+            .icon-phone:before{
+                content: '\E639';
+                margin-right: 6px;
+            }
+        }
+    }
+    .large-button-text{
+        line-height: 90px;
+    }
+    .Apply-botton{
+        background: @white;
+        position: absolute;
+        bottom: 0;
+        top: 330px;
+        width: 100%;
+        .Apply-list{
+            width: 689px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 40px;
+            overflow: hidden;
+            .Apply-list-text{
+                float: left;
+                line-height: 100px;
+                span{
+                    color: @garnet-red;
+                }
+            }
+            .Apply-list-select{
+                height: 100px;
+                overflow: hidden;
+                color:#999999;
+                border-bottom:1px solid #EEEEEE;
+                .Apply-picker{
+                    width: 100%;
+                    height: 100%;
+                    padding: 34px 0px;
+                    box-sizing: border-box;
+                    .activeShow{
+                        color:#333333
+                    }
+                    .icon-Apply-tight{
+                        float: right;
+                        margin-top: -9px;
+                    }
+                    .icon-Apply-tight:after{
+                        content: '\E643';
+                    }
+                }
+                .am-list-item{
+                    padding:0;
+                    .am-list-line{
+                        .am-input-control{
+                            input{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .time-cloose{
+            margin-top:30px;
+        }
+        .button{
+            width: 100%;
+            position: absolute;
+            bottom: 41px;
+        }
+    }
+  }
+  

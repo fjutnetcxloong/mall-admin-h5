@@ -1,0 +1,106 @@
+@import "~style";
+.my-Complain {
+    .complain-wrap{
+        padding: 40px 46px;
+        box-sizing: border-box;
+        width: 100%;
+        .complain-content{
+            overflow: hidden;
+            font-size: 30px;
+            .complain-text{
+                margin-bottom: 26px;
+            }
+        }
+        .am-list-item{
+            border: @list-border;
+            border-radius: 20px;
+            padding: 24px 28px;
+            height: 180px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+    }
+    .complain-img{
+        width: 100%;
+        margin-top:40px;
+        .img-text{
+            margin-bottom: 6px;
+        }
+        
+        .picture-area {
+            width: 100%;
+            margin-top: 12px;
+            overflow: hidden;
+            ul {
+                li {
+                    float: left;
+                    position: relative;
+                    margin: 7px;
+                    span {
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 26px;
+                        text-align: center;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        color: @light-white;
+                        background: @light-black;
+                    }
+                    img {
+                        width: 140px;
+                        height: 140px;
+                        border-radius: 10px;
+                    }
+                }
+                .imgAdd-button {
+                    width: 140px;
+                    height: 140px;
+                    background: @white;
+                    border: 1px solid #e5e5e5;
+                    // .hairline('all', #e5e5e5);
+                    border-radius: 10px;
+                    position: relative;
+                    span {
+                        margin: 0 auto;
+                        display: inline-block;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+                        color: #FF5774;
+                        line-height: 44px;
+                        text-align: center;
+                        background: @white;
+                        font-size: 44px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin: -24px 0 0 -24px;
+                    }
+                }
+            }
+        }
+    }
+    .button-box {
+        margin-top: 20px;
+        position: absolute;
+        top: 90px;
+        bottom: 0;
+        width: 100%;
+        background: @white;
+        .complain-btn{
+            width: 100%;
+            position: absolute;
+            bottom: 30px;
+            .button {
+                text-align: center;
+            }
+        }
+    }
+}
+.am-textarea-control{
+    overflow: hidden;
+    height: 180px;
+}

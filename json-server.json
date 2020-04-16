@@ -1,0 +1,9 @@
+{
+  "host": "0.0.0.0",
+  "port": "3003",
+  "watch": true,
+  "delay": 5000,
+  "static": "./mock/public",
+  "routes": "./mock/routes.json",
+  "no-cors": false
+}

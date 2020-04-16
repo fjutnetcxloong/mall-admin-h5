@@ -1,0 +1,57 @@
+@import "~style";
+.consult-center{
+    position: absolute;
+    bottom: 100px;
+    top: 110px;
+    width: 100%;
+    overflow-y: scroll;
+    .consult-list{
+        width: 100%;
+        background: @white;
+        margin-bottom: 20px;
+        padding: 40px 30px;
+        box-sizing: border-box;
+        overflow: hidden;
+        .consult-top{
+            overflow: hidden;
+            .sculpture{
+                width: 66px;
+                height: 66px;
+                border-radius: 50%;
+                float: left;
+            }
+            .consult-wrap{
+                float: left;
+                margin-left: 20px;
+                .consult-name{
+                    font-size: @font-size-28;
+                    margin-bottom: 8px;
+                }
+                .consult-timer{
+                    font-size: @font-size-24;
+                    color: @gray;
+                }
+            }
+        }
+        .consult-bottom{
+            width: 100%;
+            font-size: @font-size-28;
+            margin-top: 34px;
+        }
+    }
+}
+
+//底部协商历史
+.consult-btn{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background: @white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .consult-text{
+        margin-left: 14px;
+    }
+}

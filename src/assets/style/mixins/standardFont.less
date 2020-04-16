@@ -1,0 +1,47 @@
+.standardFont(@fontSize, @fontFamily, @fontWeight){
+    font-size:@fontSize;
+    font-family:@fontFamily;
+    font-weight:@fontWeight;
+    color: @darker-black;
+}
+
+/*      标准字--最重要      36px,标准字,粗体      大标题、数字输入*/
+.mostImportantFont(@fontWeight:@font-weight-bold, @fontSize:36px){
+    .standardFont(@fontSize, @font-family, @fontWeight);
+}
+
+/*      标准字--一般重要      32px,标准字,粗体       标题、较重要*/
+.generalImportantFont(@fontWeight:@font-weight-bold, @fontSize:32px){
+    .standardFont(@fontSize, @font-family, @fontWeight);
+}
+
+/*      标准字--重要      30px,标准字,粗体      列表标题*/
+.ImportantFont(@fontWeight:@font-weight-bold, @fontSize:30px){
+    .standardFont(@fontSize, @font-family, @fontWeight);
+}
+
+/*      标准字--一般（本套UI主要字号）      30px,标准字,中等      列表标题、列表输入字符（列表页、表单页）、段落文字、按钮；本套UI主要字号*/
+.centralCommonlyFont(@fontWeight:@font-weight-normal, @fontSize:30px){
+    .standardFont(@fontSize, @font-family, @fontWeight);
+}
+
+/*      标准字--一般      28px,标准字,中等      小标题（icon标题、商品标题、输入框提示语）*/
+.commonlyFont(@fontWeight:@font-weight-normal, @fontSize:28px){
+    .standardFont(@fontSize, @font-family, @fontWeight);
+}
+
+/*      标准字--辅助      28px,标准字,中等      链接字段*/
+.linkAuxiliaryFont(@fontWeight:@font-weight-normal, @fontSize:28px){
+    .standardFont(@fontSize, @font-family, @fontWeight);
+}
+
+/*      标准字--辅助      24px,标准字,中等      说明文本*/
+.descriptionAuxiliaryFont(@fontWeight:@font-weight-normal, @fontSize:24px){
+    .standardFont(@fontSize, @font-family, @fontWeight);
+}
+
+/*      标准字--辅助      20px,标准字,中等      标签、提示等*/
+.promptAuxiliaryFont(@fontWeight:@font-weight-normal, @fontSize:20px){
+    .standardFont(@fontSize, @font-family, @fontWeight);
+}
+

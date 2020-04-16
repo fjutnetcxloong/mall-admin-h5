@@ -1,0 +1,195 @@
+@import "~style";
+.shopHomeFourContent {
+    padding-bottom: 100px;
+
+    .comTitle4 {
+        width: 294px;
+        text-align: center;
+        color: #482f53;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        h2 {
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 13px;
+        }
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 13px;
+            color: #4a3254;
+        }
+        p {
+            width: 100%;
+            //height:1px;
+            //background:#575000;
+            border: 1px solid #575000;
+            // .hairline('all', #575000);
+            background: #575000;
+            transform: scaleY(0.5);
+        }
+    }
+
+    //编辑面板
+    .compile-box {
+        margin-top: 20px;
+        .new-box {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 40px;
+            .new-left {
+                width: 120px;
+                //height: 100%;
+                border-radius: 0 60px 0 0;
+                background: #cad9ec;
+                margin-right: 40px;
+                margin-top: 52px;
+                height: 470px;
+            }
+            .new-right {
+                width: 550px;
+                .fresh {
+                    font-size: @font-size-100;
+                    color: #cad9ec;
+                    font-style: italic;
+                    margin-bottom: 23px;
+                }
+                img {
+                    width: 100%;
+                    height: 330px;
+                    margin-bottom: 19px;
+                }
+            }
+            .headline-price {
+                .price {
+                    margin: 0;
+                    .money-now {
+                        font-size: 32px;
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        //margin-right: 48px;
+        //标题
+        .compile {
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: @light-gray;
+        }
+
+        //标题栏
+        .title-bar {
+            color: @white;
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 40px;
+            div:nth-child(1) {
+                display: inline-block;
+                font-size: @font-size-28;
+                padding: 0 29px 11px;
+                border-bottom: 1px solid @white;
+                // .hairline('bottom', @white);
+                margin-bottom: 30px;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 1);
+                line-height: 29px;
+            }
+            div:nth-child(2) {
+                font-size: @font-size-30;
+            }
+        }
+        .hot-sale {
+            color: @dark-gray;
+            div:nth-child(1) {
+                border-bottom: 1px solid #cad9ec;
+                // .hairline('bottom', #CAD9EC);
+            }
+        }
+        .title-bar {
+            color: #fff;
+            span:nth-child(1) {
+                color: #fff;
+                border-bottom: 1px solid #fff;
+                // .hairline('bottom', @white);
+            }
+            div:nth-child(2) {
+                color: #fff;
+            }
+        }
+        .sell {
+            .sell-goods {
+                width: 100%;
+                height: 330px;
+                margin-bottom: 19px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 19px;
+                }
+            }
+        }
+
+        .sell-commodity-box {
+            display: flex;
+            flex-wrap: wrap;
+            .sell {
+                width: 100%;
+            }
+            .sell-commodity {
+                width: 50%;
+                padding: 0 11px;
+                margin-bottom: 40px;
+                .sell-commodity-img {
+                    width: 100%;
+                    //border: 1px solid @light-gray;
+                    height: 304px;
+                    margin-bottom: 19px;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        //margin-bottom: 19px;
+                    }
+                }
+            }
+        }
+
+        //公用标题-价格
+        .headline-price {
+            display: flex;
+            justify-content: space-between;
+            .headline {
+                font-size: @font-size-30;
+                //margin-bottom: 3px;
+            }
+        }
+
+        .headline-price-take {
+            .headline {
+                font-size: @font-size-30;
+                margin-bottom: 24px;
+                color: @darker-black;
+                .TextOverflow();
+            }
+        }
+    }
+
+    .headline-price {
+        //height: 24px;
+        .headline {
+            .TextOverflow();
+            width: 50%;
+        }
+    }
+    .compile-box-second {
+        .title-bar div:nth-child(1) {
+            color: #666;
+            border-bottom: 1px solid #666;
+            // .hairline('bottom', #666);
+        }
+        .title-bar div:nth-child(2) {
+            color: #666;
+        }
+    }
+}

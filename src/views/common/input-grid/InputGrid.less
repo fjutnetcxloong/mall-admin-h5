@@ -1,0 +1,46 @@
+@import "~style";
+
+.frame {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 100;
+    .input-pws{
+        position: absolute;
+        top: 0;
+        left: 0;
+        letter-spacing: 86px;
+        width: 640px;
+        text-indent: 48px;
+        height: 100px;
+        border: 0;
+        background: rgba(0, 0, 0, 0);
+        box-sizing: border-box;
+        font-size: 0.28rem;
+    }
+    input {
+        &:focus {
+            outline: medium;
+        }
+    }
+    .frame-biu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 600px;
+        height: 100px;
+        border-radius: 10px;
+        border: 2.5px solid @fiery-red;
+        .frame-biu-one {
+            margin-top: 20px;
+            width: 100px;
+            height: 60px;
+            box-sizing: border-box;
+            float: left;
+            border-right: 2.5px solid #E5E5E5;
+        }
+    }
+}

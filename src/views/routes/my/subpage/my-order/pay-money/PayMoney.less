@@ -1,0 +1,209 @@
+@import "~style";
+.pay-money {
+
+    .wrapTabNav {
+        .navbar {
+            .blackNav-right {
+                .icon-right:before {
+                    content: '\E675';
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .surplus {
+        height: 206px;
+        padding-top: 50px;
+        background-color: @fiery-red;
+        text-align: center;
+        .surplus-top {
+            font-size: @font-size-24;
+            color: @white;
+            margin-bottom: 30px;
+            span {
+                font-size: @font-size-48 ;
+            }
+        }
+        .surplus-bottom {
+            display: flex;
+            justify-content: center;
+            .remaining-time {
+                font-size: @font-size-24;
+                color: @white;
+                margin-right: 10px;
+                display: flex;
+            }
+            .reciprocal {
+                display: flex;
+                color: @white;
+                margin-top:-5px;
+                .have_dot{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .time-box {
+                    font-size: @font-size-20;
+                    margin: 4px 7px;
+                    width: 30px;
+                    height: 30px;
+                    background: @white;
+                    color: @fiery-red;
+                    padding: 2px;
+                    border-radius: 4px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .build{
+        margin-top: 20px;
+    }
+
+    .payment-method-box {
+        .payment-method {
+            padding: 0 30px 0 30px;
+            background-color: @white;
+            .distance {
+                height: 120px;
+                display: flex;
+                justify-content: space-between;
+                padding: 29px 2px 31px 11px;
+                line-height: 65px;
+                .hairline('bottom',#ededed)!important;
+                .pm-left {
+                    margin-right: 39px;
+                    .balance-cam, .we-chat, .alipay {
+                        width: 60px;
+                        height: 60px;
+                        background-size: 1950px!important;
+                    }
+                    .balance-cam {
+                        margin-top: 6px;
+                        background: url("../../../../../../assets/images/CSS-Sprites.jpg") -1650px -300px no-repeat;
+                    }
+                    .we-chat {
+                        background: url("../../../../../../assets/images/CSS-Sprites.jpg") -600px -300px no-repeat;
+                    }
+                    .alipay{
+                        background: url("../../../../../../assets/images/CSS-Sprites.jpg") -450px -300px no-repeat;
+                    }
+                }
+                .pm-center {
+                    flex: 1;
+                    font-size: @font-size-30;
+                    color: @darker-black;
+                }
+                .icon-Selection {
+                    margin: auto;
+                }
+                .icon-Selection:before {
+                    content: '\e612';
+                    color: red;
+                }
+                .icon-Unselected {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    // .hairline('all', @gray);
+                    margin: auto 6px auto 0;
+                }
+            }
+            .distance::after {
+                height: 0 !important;
+            }
+        }
+        .payment-method:last-child {
+            .distance {
+                border-bottom: none!important;
+            }
+        }
+        .build{
+            margin-top: 20px;
+        }
+    }
+
+    .binding {
+        display: flex;
+        justify-content: space-between;
+        padding: 42px 30px;
+        background-color: @white;
+        line-height: 45px;
+        .binding-left {
+            margin-left: 91px;
+            font-size: @font-size-30;
+        }
+        .binding-right {
+            color: @gray;
+            font-size: @font-size-30;
+        }
+        .binding-right:after {
+            content: '\e643';
+            font-size: @font-size-40;
+            vertical-align: bottom;
+        }
+    }
+
+    .promptly {
+        width: 660px;
+        height: 100px;
+        background:linear-gradient(0deg,@garnet-red 0%,@fiery-red 100%);
+        box-shadow:@button-box-shadow;
+        border-radius:50px;
+        font-size: @font-size-36;
+        color: @white;
+        text-align: center;
+        line-height: 100px;
+        position: fixed;
+        bottom: 41px;
+        left: 50%;
+        transform:translate(-50%)
+    }
+    .payTip{
+        text-align: center;
+    }
+    .enter-password-box {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        background: @light-black;
+        .enter-password {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: @white;
+            .command {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 32px;
+                .hairline('bottom',@to-light-gray);
+                margin-bottom: 60px;
+                .command-left:before {
+                    content: '\E646';
+                    font-size: @font-size-36;
+                    color: #A2A2A2;
+                }
+                .command-center {
+                    font-size: @font-size-36;
+                    color: @darker-black;
+                }
+                .command-right:before {
+                    content: '\E640';
+                    font-size: @font-size-36;
+                    color: #A2A2A2;
+                }
+            }
+            .frame {
+                height: 100px;
+            }
+            p {
+                text-align: center;
+                font-size: @font-size-28;
+                color: @link-color;
+                margin-top: 60px;
+            }
+        }
+    }
+}

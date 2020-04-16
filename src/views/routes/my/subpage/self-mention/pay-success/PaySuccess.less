@@ -1,0 +1,93 @@
+@import "~style";
+.Pay-success {
+    .wrapTabNav {
+        margin-bottom: 20px;
+    }
+    .navbar {
+        border-bottom: none;
+
+        .nav-right .icon-right:before {
+            content: '\E63d';
+        }
+        .blackNav-right {
+            .icon-right:before {
+                content: '\E675';
+                font-weight: 500;
+            }
+        }
+    }
+
+    .number {
+        height: 180px;
+        line-height: 180px;
+        border-radius: 20px;
+        display: flex;
+        background-color: @white;
+        margin-bottom:20px;
+        justify-content: space-between;
+        padding: 0 30px;
+        .number-left {
+            //margin: 0 29px 20px 30px;
+            font-size: @font-size-32;
+            color: @darker-black;
+            font-weight: bold;
+            //font-weight:bold;
+        }
+        .number-right {
+            font-size: @font-size-60;
+            color: @fiery-red;
+            letter-spacing: 6px;
+            display: block;
+            width: 4.7rem;
+            text-align: center
+        }
+    }
+
+    .shop-plan {
+        background-color: @white;
+        padding: 40px 30px 38px;
+        border-radius: 20px;
+        .shop-plan-top {
+            margin-bottom: 30px;
+            .left-show {
+                font-size: @font-size-30;
+                color: @darker-black;
+                font-weight: bold;
+            }
+        }
+        .shop-plan-center {
+            margin-bottom: 38px;
+            text-align: center;
+            img {
+                width: 300px;
+                height: 300px;
+                border-radius: 20px;
+            }
+        }
+        .shop-plan-bottom {
+            width: 630px;
+            padding-top: 27px;
+            .hairline('top',#ededed);
+            font-size: @font-size-24;
+            color: @dark-gray;
+            line-height: 30px;
+            margin: 0 auto;
+        }
+    }
+    .footer-tip{
+        width:300px;
+        margin:60px auto 0;
+        line-height: 40px;
+        color:#666;
+        span{
+            display: block;
+            width:100%;
+            text-align: center;
+            margin-bottom:32px;
+            font-weight: bold;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}

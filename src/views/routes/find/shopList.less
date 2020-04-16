@@ -1,0 +1,116 @@
+@import "~style";
+
+.shop-list{
+    .icon-stars:before{
+        content: '\e638';
+        color: @duckling-yellow;
+        font-size: 30px;
+    }
+    .wrapTabNav {
+        margin-bottom: 20px;
+    }
+    .work-time{
+        text-align: right;
+        color:@gray;
+        font-size: @font-size-20;
+        span{
+            margin-left: 36px;
+            a{
+                text-decoration:none;
+                pointer-events:none; 
+                color:@gray;
+            }
+        }
+        a{
+            text-decoration:none;
+            pointer-events:none; 
+            color:@gray;
+        }
+    }
+    .content-wrapper{
+        display: flex;
+        padding: 0 30px;
+    }
+    .list-content{
+        padding: 0 30px;
+        background: @white;
+        li {
+            padding: 30px 0;
+            .hairline('bottom',@to-light-gray);
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .awatar{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            flex: 0 0 100px;
+            margin-right: 10px;
+            background: #000;
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+        .right-content{
+            flex: 1;
+            .star-box{
+                margin-bottom: 4px;
+                .icon-tiny:before{
+                    content: '\E637';
+                    color: @duckling-yellow;
+                    font-size: 30px;
+                }
+            }
+            .list-title{
+                padding-top: 10px;
+                display: flex;
+                p:nth-child(1){
+                    font-size: @font-size-30;
+                    color:@darker-black;
+                    margin-right: 20px;
+                }
+                p:nth-child(2){
+                    color:@gray;
+                    font-size: @font-size-20;
+                    line-height: 50px;
+                    span{
+                        margin-left: 15px;
+                        a{
+                            text-decoration:none;
+                            pointer-events:none; 
+                            color:@gray;
+                        }
+                    }
+                }
+            }
+            .address{
+                width: 447px;
+                display: flex;
+                .icons {
+                    margin: -4px 10px 0 0 ;
+                }
+                .address-icon {
+                    margin-top: -10px;
+                }
+                .address-icon:before{
+                    content: '\E648';
+                    font-size: @font-size-34;
+                    color:@fiery-red;
+                }
+                span{
+                    color: @gray;
+                    font-size: @font-size-24;
+                    line-height: 30px;
+                    a{
+                        text-decoration:none;
+                        pointer-events:none; 
+                        color:@gray;
+                    }
+                }
+            }
+        }
+    }
+}

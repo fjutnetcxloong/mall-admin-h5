@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes"/>
+        <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no"/>
+        <title>中卖网</title>
+        <% for (var css in htmlWebpackPlugin.files.css) { %>
+            <link href="<%=htmlWebpackPlugin.files.css[css] %>" rel="stylesheet"/>
+        <% } %>
+        <style>
+            /* .loading-canvas{
+                width: 100%;
+                height: 96vh;
+                background: #ffffff
+            }
+            .canvas-drawing{
+                width: 100%;
+                height: 332px;
+                margin:70px auto;
+            } */
+            body{
+                margin: 0;
+            }
+            #loading{
+                position: relative;
+                height: 100vh;
+                background-color: #ff5b53;
+                /* transition: display 1s ease 0; */
+            }
+            .c-box{
+                /* background: url('../src/assets/images/c-bg.png'); */
+                padding-top: 200px;
+                text-align: center;
+                background-color: #ff5b53;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+            #c-logo{
+                height: 87px;
+                width: auto;
+            }
+            .c-bgimg{
+                width: 100%;
+                height: 100%;
+            }
+            .c-title{
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+            }
+            .c-title-content{
+                margin: auto;
+                height: 50px;
+                line-height: 50px;
+                color: #fff;
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+            .c-logo{
+                margin: auto;
+                width: 86px;
+                position: relative;
+                height: 0;
+                border-radius: 20px;
+                /* padding-top: 10px; */
+                box-sizing: border-box;
+                background-color: #fff;
+                /* box-shadow: ; */
+                transform:rotateY(88deg);
+                -ms-transform:rotateY(88deg); 	/* IE 9 */
+                -moz-transform:rotateY(88deg); 	/* Firefox */
+                -webkit-transform:rotateY(88deg); /* Safari 和 Chrome */
+                animation:myFirst 2s ease-out 0.2s infinite forwards;
+                -moz-animation:myFirst 2s ease-out 0.2s infinite forwards; /* Firefox */
+                -webkit-animation:myFirst 2s ease-out 0.2s infinite forwards; /* Safari and Chrome */
+                -o-animation:myFirst 2s ease-out 0.2s infinite forwards; /* Opera */
+            }
+            .c-logo img{
+                width: 46px;
+                height: 47px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                opacity: 0;
+                animation:mySecond 2s ease-in 0.2s infinite forwards;
+                -moz-animation:mySecond 2s ease-in 0.2s infinite forwards; /* Firefox */
+                -webkit-animation:mySecond 2s ease-in 0.2s infinite forwards; /* Safari and Chrome */
+                -o-animation:mySecond 2s ease-in 0.2s infinite forwards; /* Opera */
+            }
+            .c-mask{
+                position: absolute;
+                height: 50px;
+                width: 350px;
+                background-color: #ff5b53;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                animation:myMask 2s linear 0.2s infinite forwards;
+                -moz-animation:myMask 2s linear 0.2s infinite forwards; /* Firefox */
+                -webkit-animation:myMask 2s linear 0.2s infinite forwards; /* Safari and Chrome */
+                -o-animation:myMask 2s linear 0.2s infinite forwards; /* Opera */
+            }
+            @keyframes myFirst {
+                0% {height: 0;transform: rotateY(88deg);}
+                20% {height: 87px;transform: rotateY(88deg);}
+                50% {height: 87px;transform: rotateY(720deg);}
+                100% {height: 87px;transform: rotateY(720deg);}
+            }
+            @keyframes mySecond {
+                0% {transform:scale(0);opacity: 0;}
+                50% {transform:scale(0);opacity: 0;}
+                55% {transform: scale(0.5);opacity: 1;}
+                58% {transform: scale(0.5);opacity: 1;}
+                59% {transform: scale(0.8);opacity: 1;}
+                60% {transform:scale(1.1);opacity: 1;}
+                70% {transform:scale(0.8);opacity: 1;}
+                80% {transform:scale(0.8);opacity: 1;}
+                95% {transform: scale(1);opacity: 1;}
+                100% {transform: scale(1);opacity: 1;}
+            }
+            @keyframes myMask {
+                0% {left: 0;}
+                20% {left: 0;}
+                50% {left: 350px;}
+                100% {left: 350px;}
+            }
+        </style>
+        <script>
+            function res() {
+                var deviceWidth = document.documentElement.clientWidth;
+                if (deviceWidth > 750) deviceWidth = 750;
+                document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+                window.rem = deviceWidth / 7.5;
+            }
+            res();
+            window.onresize = function () {
+                res();
+            }
+
+            window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", userOrientation, false);
+            //判断手机横竖屏状态：
+            function userOrientation(){
+                if(window.orientation==180||window.orientation==0){
+                    console.log('竖屏状态');
+                }
+                if(window.orientation==90||window.orientation==-90){
+                    alert('你好亲。为了更好的体验请你切换回竖屏')
+                }
+            }
+            userOrientation();
+
+            /**
+             * 判断是否是微信环境
+             */
+            window.isWX = function getIsWxClient () {
+                var ua = navigator.userAgent.toLowerCase();
+                if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                    return true;
+                }
+                return false;
+            }();
+        </script>
+        <!--<script src="http://at.alicdn.com/t/font_1151553_wu287zvy76s.js"></script>-->
+        <script src="http://sdk.talkingdata.com/app/h5/v1?appid=A5A10D902BA54F699A1DE3361C7E7E07&vn=zpyg&vc=0.0.1"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=GFnu2bon0GPM7wuu8rPROimLuqi18eFE"></script>
+
+    </head>
+    <body>
+        <div id="root"></div>
+        <div id="loading">
+            <img class="c-bgimg" src="../src/assets/images/c-bg.png" alt="">
+            <div class="c-box">
+                <div id="c-logo">
+                    <div class="c-logo">
+                        <img src="../src/assets/images/c-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="c-title">
+                    <div class="c-title-content">优质商品 快乐选购</div>
+                    <div class="c-mask"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var loadingAnimation = document.getElementById("loading");
+            loadingAnimation.style.overflowY = "hidden";
+            // var body = document.getElementsByTagName("body");
+            // body.style.overFlow = "hidden";
+            // body.style.height = "100vh";
+            if (window.loading.style) {
+                if (window.loading.style.cssText) {
+                    loadingAnimation.style.display = "none";
+                }
+            }
+            // https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxc750bd9a0064d947&redirect_uri=http://csmp.zzha.vip/&response_type=code&scope=snsapi_userinfo#wechat_redirect
+        </script>
+        <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=GFnu2bon0GPM7wuu8rPROimLuqi18eFE"></script>
+        <% if ((htmlWebpackPlugin.options.env === 'dev' || htmlWebpackPlugin.options.env === 'prev')) { %>
+        <!-- VConsole调试 (mobile 上调试) -->
+        <script src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/3.0.0/vconsole.min.js"></script>
+        <script>
+            new VConsole();
+        </script>
+        <% } %>
+        <script>
+            if(window.isWX) document.writeln('<script src="https://res2.wx.qq.com/open/js/jweixin-1.4.0.js"'+'>'+'<'+'/'+'script>');
+        </script>
+        <script>
+            if (window.isWX) {
+                    const data=JSON.stringify({
+                         url: location.href.split('#')[0],
+                    });
+            if (window.fetch) {
+                fetch('https://cs.zzha.vip/wechat/index', {
+                method: 'POST',
+                body: data,
+                headers: new Headers({
+                            'Content-Type': 'application/json'
+                        })
+                }).then(res => res.json()).then(response =>
+                    wx.config({
+                        debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                        appId: response.appId, // 必填，公众号的唯一标识
+                        timestamp: response.timestamp, // 必填，生成签名的时间戳
+                        nonceStr: response.nonceStr, // 必填，生成签名的随机串
+                        signature: response.signature,// 必填，签名
+                        jsApiList: ['getLocation','scanQRCode','openLocation','updateAppMessageShareData','updateTimelineShareData'] // 必填，需要使用的JS接口列表
+                    })
+                )
+            } else  {
+                let xmlhttp;
+                if (window.XMLHttpRequest) {
+                    xmlhttp = new XMLHttpRequest();
+                } else {
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.open("POST", 'https://cs.zzha.vip/wechat/index', true);
+                xmlhttp.setRequestHeader("Content-type","application/json");
+                xmlhttp.send(data);
+                xmlhttp.onreadystatechange = function(){
+                    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                        if (xmlhttp.responseText) {
+                            const json = JSON.parse(xmlhttp.responseText);
+                            wx.config({
+                                debug: true,
+                                appId: json.appId, // 必填，公众号的唯一标识
+                                timestamp: json.timestamp, // 必填，生成签名的时间戳
+                                nonceStr: json.nonceStr, // 必填，生成签名的随机串
+                                signature: json.signature,// 必填，签名
+                                jsApiList: ['getLocation','scanQRCode','openLocation','updateAppMessageShareData','updateTimelineShareData'] // 必填，需要使用的JS接口列表
+                            })
+                        }
+                    }
+                }
+            }
+
+            window.wx.ready(() => {
+                wx.updateAppMessageShareData({
+                    title: '公众号',
+                    desc: '一个很牛逼的公众号哟',
+                    link: 'http://csmp.zzha.vip/',
+                    imgUrl: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571912013812&di=1349d2e723938b9da4b3e022e7bc0a28&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181025%2F59711b6806694edd9bd0bbace2bd4709.jpeg', // 分享图标
+                })
+
+                wx.updateTimelineShareData({
+                    title: '公众号', // 分享标题
+                    desc: '一个很牛逼的公众号哟',
+                    link: 'http://csmp.zzha.vip/',
+                    imgUrl: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571912013812&di=1349d2e723938b9da4b3e022e7bc0a28&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181025%2F59711b6806694edd9bd0bbace2bd4709.jpeg',
+                })
+        });
+    }
+        </script>
+        <%var chunks = htmlWebpackPlugin.files.chunks;for (var chunk in chunks) {%>
+        <script src="<%=chunks[chunk].entry %>"></script><% } %>
+    </body>
+</html>

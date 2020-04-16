@@ -1,0 +1,65 @@
+@import "~style";
+.inspect {
+    .wrapTabNav {
+        margin-bottom: 20px;
+        .blackNav-right {
+            .icon-right:before {
+                content: '\E675';
+            }
+        }
+    }
+    .am-list-item {
+        height: 180px;
+        .am-list-line {
+            .am-input-label {
+                font-weight:bold;
+            }
+            .am-input-control {
+                input {
+                    text-align: right;
+                    padding-left: 60px;
+                }
+                input::placeholder {
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .am-list-line::after {
+        height: 0!important;
+    }
+    .scan {
+        background: @white;
+        position: absolute;
+        top: 308px;
+        bottom: 0;
+        padding: 38px 30px 80px;
+        width: 100%;
+        div:nth-child(1) {
+            color: @darker-black;
+            font-size: @font-size-32;
+            margin-bottom: 42px;
+            font-weight:bold;
+        }
+        .icon-scan {
+            display: block;
+            text-align: center;
+        }
+        .icon-scan:before {
+            content: '\E656';
+            font-size: @font-size-300;
+            color: @fiery-red;
+        }
+        .pushbutton {
+            .largeButton();
+            .important;
+            text-align: center;
+            color: @white;
+            font-family:PingFang-SC-Medium;
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+    }
+}

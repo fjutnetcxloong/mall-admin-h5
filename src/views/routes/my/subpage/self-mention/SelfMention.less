@@ -1,0 +1,299 @@
+@import "~style";
+.Self-mention {
+    .navbar {
+        background: @fiery-red;
+        // height: 120px;
+        .nav-left {
+            margin-right: 60px;
+        }
+        .nav-title {
+            letter-spacing: 3px;
+        }
+        .icon-left:before,.blackNav-title,.icon-right:before {
+            color: @white;
+        }
+    }
+    .shop-lists {
+        .aroundBlank();
+        margin: 0 auto;
+        width: 690px;
+        margin-top: 20px;
+        border-radius: 20px;
+        background: @white;
+        padding: 20px;
+        overflow: hidden;
+        .shop-name {
+            display: flex;
+            font-size: @font-size-30;
+            box-sizing: border-box;
+            justify-content: space-between;
+            .shop-title{
+                display: flex;
+                justify-content: left;
+                font-weight: 500;
+                img {
+                    width: 59px;
+                    height: 59px;
+                    border-radius: 50%;
+                }
+                p {
+                    font-size: 30px;
+                    height:56px;
+                    line-height: 56px;
+                    color: @darker-black;
+                    margin:0 16px 0 20px;
+                    max-width: 300px;
+                    .TextareaOverflow(1);
+                }
+                .enter:before {
+                    content: '\E643';
+                    color: @gray;
+                    font-size: @font-size-30;
+                }
+            }
+            .right{
+                color: @fiery-red;
+                font-size: @font-size-26;
+                line-height: 72px;
+            }
+        }
+        .goods {
+            margin-top: 30px;
+            display: flex;
+            .goods-left {
+                margin-right: 20px;
+                display: flex;
+                img {
+                    border-radius: 10px;
+                    flex: 0 0 240px;
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            .goods-right {
+                flex: 1;
+                padding-top: 14px;
+                box-sizing: border-box;
+                height: 170px;
+                .goods-desc {
+                    font-size: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    color: @darker-black;
+                    .desc-title{
+                        width: 306px;
+                        .TextareaOverflow(2);
+                        font-weight:500;
+                        letter-spacing:300/36px;
+                    }
+                    .price{
+                        font-weight:bold;
+                        overflow: hidden;
+                        text-overflow:ellipsis;
+                        white-space:nowrap;
+                        .samll-money{
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                .goods-sku {
+                    display: flex;
+                    font-size: 20px;
+                    color: @gray;
+                    margin: 11px 0;
+                    .sku-left {
+                        display: flex;
+                        justify-content: left;
+                        flex: 1;
+                        .goods-size{
+                            margin: 10px 20px 12px 0;
+                            max-width: 33%;
+                            //flex: 1;
+                            .TextareaOverflow(1);
+                            font-size: 24px;
+                            color:#999999;
+                        }
+                    }
+                    .sku-right {
+                        text-align: right;
+                        font-size: 24px;
+                        margin-top:10px;
+                        color:#999999;
+                        //flex: 1;
+                    }
+                }
+                .btn-keep {
+                    padding: 3px 12px;
+                    height: auto;
+                    line-height: 30px;
+                    color:#FF2D51;
+                    background:#ffeaed;
+                    font-size:20px;
+                    border-radius: 4px;
+                }
+
+                .goods-price {
+                    font-size: 36px;
+                    text-align: right;
+                    color: @fiery-red;
+                    margin-top: 40px;
+                }
+            }
+        }
+        .shop-bottom{
+            width: 100%;
+            .right-bottom{
+                color: @darker-black;
+                width: 420px;
+                float: right;
+                .total-count{
+                    font-size: 24px;
+                    font-weight: 500;
+                    text-align: right;
+                    color: #666;
+                    span{
+                        color: @fiery-red;
+                        font-weight: normal;
+                    }
+                }
+                .total-price{
+                    display: flex;
+                    justify-content: right;
+                    //font-size: @font-size-28;
+                    font-size:26px;
+                    margin-top: 20px;
+                    .total-price-right{
+                        //flex: 1;
+                        text-align: right;
+                        /*width: 240px;*/
+                        overflow: hidden;
+                        white-space: nowrap;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        text-overflow: ellipsis;
+                        color: #666;
+                        font-size: 24px;
+                        .money {
+                            margin-top: 1px;
+                            font-weight: bold;
+                            font-size: @font-size-36;
+                            color:#333;
+                            .samll-money{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                    .total-price-left{
+                        flex: 1;
+                        text-align: right;
+                        line-height: 38px;
+                        margin-right: 20px;
+                    }
+                    .money {
+                        margin-top: 1px;
+                        font-weight: bold;
+                        font-size: @font-size-30;
+                        .samll-money{
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        .buttons{
+            margin-top: 65px;
+            display: flex;
+            justify-content: flex-end;
+            line-height: 48px;
+            div{
+                width: 150px;
+                height: 50px;
+                border: 2px solid @dark-gray;
+                border-radius: 25px;
+                line-height: 46px;
+                text-align: center;
+                font-size: 24px;
+                color: @dark-gray;
+                font-weight: 500;
+            }
+            .look-button {
+                font-size: @font-size-24;
+                color: @dark-gray;
+                border: 2px solid #666;
+                border-radius: 25px;
+                width: 150px;
+                text-align: center;
+            }
+            .delete {
+                // margin-right: 10px;
+            }
+            .delete-button{
+                border: none;
+            }
+            .evaluate-button{
+                border-color: @fiery-red;
+                color: @fiery-red;
+                margin-left: 20px;
+                border: 2px solid #666;
+                border-radius: 25px;
+                width: 150px;
+                text-align: center;
+            }
+        }
+        .drawback{
+            margin-top: 20px;
+        }
+    }
+
+    .am-list-body{
+        background: rgba(0, 0, 0, 0);
+    }
+    .am-list-body::before, .am-list-body::after{
+        height: 0 !important;
+    }
+    .am-tabs-tab-bar-wrap {
+        .am-tabs-default-bar-content {
+            height: 87px;
+            box-shadow:@box-shadow-02180;
+            .am-tabs-default-bar-tab {
+                height: 60px;
+                margin-top: 12px;
+                border-right: 1px solid @to-light-gray;
+                // .hairline('right', @to-light-gray);
+            }
+            .am-tabs-default-bar-tab:nth-child(4) {
+                border-right: none;
+            }
+            .am-tabs-default-bar-tab:after {
+                height: 0!important;
+            }
+            .am-tabs-default-bar-tab-active {
+                color: @darker-black;
+            }
+            .am-tabs-default-bar-underline {
+                width: 36px!important;
+                height: 8px;
+                background: @fiery-red;
+                border: none;
+                transform: translate3d(74px, -10px, 0);
+                border-radius: 50px;
+                // margin-left:36px;
+                margin-left:4px;
+            }
+        }
+    }
+    .general-other{
+        .am-tabs-tab-bar-wrap {
+            .am-tabs-default-bar-content {
+                .am-tabs-default-bar-tab {
+                    border-right: 1PX solid @to-light-gray;
+                }
+            }
+        }
+    }
+    .am-tabs-pane-wrap {
+        overflow-y: initial;
+    }
+}
+

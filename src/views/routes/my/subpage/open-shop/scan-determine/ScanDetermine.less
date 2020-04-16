@@ -1,0 +1,46 @@
+@import "~style";
+.scan-determine {
+    .wrapTabNav {
+        margin-bottom: 20px;
+    }
+    .recommend-content {
+        position: absolute;
+        top: 104px;
+        bottom: 0;
+        background: @white;
+        width: 100%;
+        .picture {
+            text-align: center;
+            padding: 80px 45px;
+            img {
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+            }
+        }
+
+        .information {
+            text-align: center;
+            font-size: @font-size-30;
+            color: @darker-black;
+            margin-bottom: 105px;
+            p {
+                margin-bottom: 30px;
+            }
+        }
+
+        .button {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            .general {
+                border: 1px solid @dark-gray !important;
+                color: @dark-gray;
+            }
+            .important {
+                color: @white!important;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,40 @@
+
+.am-popover {
+    left: 420px!important;
+    right: 30px !important;
+    top: 96px !important;
+    width: 48% !important;
+    position: fixed;
+    .am-popover-inner-wrapper {
+        display: flex;
+        padding: 40px 10px;
+        border-radius:10px;
+        justify-content: space-between;
+        .am-popover-item {
+            // float: left;
+            .am-popover-item-container {
+                flex-direction: column;
+                padding: 0 10px!important;
+                height: auto;
+
+                .am-popover-item-icon {
+                    margin: 0 0 19px 0;
+                    width: auto;
+                    height: auto;
+                    img {
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+                .am-popover-item-content {
+                    font-size: 20px;
+                }
+            }
+            .am-popover-item-container::before {
+                height: 0 !important;
+            }
+        }
+    }
+
+}
+

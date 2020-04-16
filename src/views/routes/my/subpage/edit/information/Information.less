@@ -1,0 +1,41 @@
+@import "~style";
+.information {
+    .wrapTabNav {
+        margin-bottom: 20px;
+        .navbar {
+            border-bottom: none;
+        }
+    }
+    .tidings-box {
+        //position: absolute;
+        //top: 108px;
+        //bottom: 0;
+        width: 100%;
+        background: @white;
+        .am-list {
+            .am-list-body {
+                .am-list-item {
+                    border-bottom: 2px solid @to-light-gray;
+                }
+            }
+            .am-list-body:before, .am-list-line::after, .am-list-body::after {
+                height: 0!important;
+            }
+        }
+    }
+    .am-icon {
+        color: @darker-black;
+    }
+    .am-list-content {
+        color: @darker-black;
+        font-size: 30px;
+    }
+    .am-list-line {
+        padding-left: 30px;
+    }
+    .am-list-item .am-list-line {
+        padding-left: 30px!important;
+    }
+}
+
+

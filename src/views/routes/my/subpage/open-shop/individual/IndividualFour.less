@@ -1,0 +1,147 @@
+@import "~style";
+.individual-four {
+    .step-box-clear{
+        margin-top: 0 !important;
+    }
+    .step-box {
+        .step:nth-child(-n+4) {
+            span:nth-child(1) {
+                border: 2px solid @fiery-red;
+                background:@fiery-red ;
+                color: @white;
+            }
+            span:nth-child(2) {
+                color:@fiery-red ;
+            }
+        }
+    }
+    .dotted {
+        .am-flexbox-item:nth-child(-n+3) {
+            //margin: 0 48px 0 60px;
+            border: 1px dashed @fiery-red;
+            // .hairline('all', @fiery-red);
+            border-style: dashed;
+        }
+    }
+    .margin {
+        margin-bottom: 20px;
+
+    }
+   .margin {
+       .remark{
+           .am-list-content{
+               font-size: @font-size-24;
+               color: @dark-gray;
+           }
+       }
+       .merchant-state {
+           display: flex;
+           justify-content: space-between;
+           padding-left: 30px;
+
+           .state-left {
+               line-height: 100px;
+           }
+
+           .state-right {
+               display: flex;
+               justify-content: flex-end;
+               .am-list-item {
+                   width: 220px;
+                   display: flex;
+                   border-bottom: none;
+                   .am-list-line {
+                       .am-list-content {
+                           text-align: right;
+                           font-size: @font-size-30;
+                       }
+                       .am-radio {
+                           .am-radio-inner {
+                               left: 16px;
+                               top: 36px;
+                               border: 1px solid @gray;
+                            // .hairline('all', @gray);
+                               border-radius: 50%;
+                           }
+                           .am-radio-inner:after {
+                               width: 21px;
+                               height: 21px;
+                               background: @fiery-red;
+                               border-radius: 50%;
+                               top: 50%;
+                               transform:translate(75%,-47%);
+                               left: -44%;
+
+                           }
+                       }
+                   }
+               }
+           }
+       }
+       .select-bank{
+           .am-list-line {
+               //padding-right: 0;
+               .am-list-content {
+                   .region {
+                       padding: 30px 0;
+                   }
+                   .am-list-item {
+                       border-bottom: none;
+                       .am-list-line {
+                           padding-right: 0;
+                       }
+                   }
+               }
+           }
+           .am-list-content{
+               display: flex;
+           }
+           .am-list-extra{
+               display: none;
+           }
+       }
+       .regional {
+           line-height: 100px!important;
+           .gray-3 {
+               margin: 0 30px 0 0;
+           }
+           .gray-3:last-child {
+               margin-right: 0;
+           }
+           .picker-inline {
+               margin-right: 0;
+               width: auto;
+           }
+       }
+       //.am-list-body {
+       //    .area {
+       //        .am-list-content {
+       //            span {
+       //                margin-right: 30px;
+       //            }
+       //            .region-select {
+       //                flex: 1;
+       //
+       //            }
+       //        }
+       //    }
+       //}
+   }
+    .checking {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+        border-bottom: 1px solid @to-light-gray;
+        // .hairline('bottom', @to-light-gray);
+        span {
+            font-size: @font-size-30;
+            color: @link-color;
+            line-height: 100px;
+            width: 184px;
+            text-align: right;
+        }
+    }
+    .am-list-arrow-horizontal{
+        display: none !important;
+    }
+}

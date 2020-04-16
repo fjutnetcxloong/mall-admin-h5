@@ -1,0 +1,29 @@
+@import "~style";
+.transferRecord {
+    .record-box {
+        position: absolute;
+        width: 100%;
+        top: 108px;
+        bottom: 0;
+        background: @white;
+        .record {
+            padding: 37px 30px 40px;
+            background: @white;
+            .hairline('bottom',@to-light-gray);
+            .record-top {
+                font-size: @font-size-30;
+                color: @darker-black;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 22px;
+            }
+            .record-bottom {
+                display: flex;
+                justify-content: space-between;
+                font-size: @font-size-28;
+                color: @dark-gray;
+            }
+        }
+    }
+}
+

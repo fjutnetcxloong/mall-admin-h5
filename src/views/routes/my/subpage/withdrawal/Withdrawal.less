@@ -1,0 +1,330 @@
+@import "~style";
+
+.Withdrawal {
+    height: 100vh;
+    .navbar {
+        background: transparent!important;
+    }
+    .cash-bg {
+        position: absolute;
+        width: 100%;
+        height: 163px;
+        background: linear-gradient(180deg, @garnet-red 0%, @fiery-red 100%);
+        top: 0;
+    }
+    .cash-bg-WX {
+        height: 60px;
+    }
+}
+.Withdrawal .navbar{
+    //background: rgba(0, 0, 0, 0);
+    .icon-left:before, .blackNav-title {
+        color: @white!important;
+    }
+}
+.extract {
+
+
+    .withdrawColor{
+        height: 100vh;
+        background: @white;
+    }
+
+
+    .cash-content-navbar {
+        // margin:0 30px;
+        // padding-top: 10px;
+        // background-color: #fff;
+        color: #333;
+        .am-navbar {
+            background: none;
+            .am-navbar-left {
+                padding: 0;
+                z-index: 1;
+                .am-navbar-left-icon {
+                    font-size: @font-size-38;;
+                    font-weight: @font-weight-normal;
+                }
+            }
+            .am-navbar-title {
+                font-size: @font-size-38;
+                font-weight: @font-weight-bold;
+                font-family: @font-family;
+                color: #fffefe;
+                z-index: 1;
+            }
+        }
+        .am-navbar-right {
+            margin: 0;
+            z-index: 1;
+        }
+    }
+
+    .cash-content-tabs {
+        //position: absolute;
+        //width: 100%;
+        //top: 100px;
+        //bottom: 0;
+        //padding-top: 100px;
+        .am-tabs {
+            height: auto;
+        }
+        .am-tabs-tab-bar-wrap {
+            margin: 0 30px;
+            padding-top: 20px;
+
+            .am-tabs-default-bar {
+                width: 100%;
+                height: 90px;
+
+                background: @white;
+                box-shadow: @box-shadow-02180;
+                border-radius: 45px;
+
+                .am-tabs-default-bar-tab {
+                    //height:29px;
+                    font-size: @font-size-30;
+                    font-family: @font-family;
+                    font-weight: @font-weight-normal;
+                    color: @darker-black;
+                }
+                .am-tabs-default-bar-tab::after {
+                    height: 0!important;
+                }
+                #m-tabs-2-0:after, #m-tabs-0-0:after {
+                    position: absolute;
+                    width: 1px;
+                    height: 120px;
+                    left: 100%;
+                    bottom: 15%;
+                    content: " ";
+                }
+
+                #m-tabs-2-1:after, #m-tabs-0-1:after {
+                    display: none !important;
+                }
+
+                .am-tabs-default-bar-underline {
+                    width: 36px !important;
+                    height: 8px;
+                    bottom: 14px;
+                    background: @fiery-red;
+                    border-radius: 4px;
+                    margin-left: 23%;
+                }
+            }
+        }
+    }
+
+    //微信
+    .weChat {
+        min-height: 978px;
+    }
+
+    .bank-card{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 150px!important;
+        padding: 0 32px!important;
+        box-sizing: border-box;
+        background: @white;
+        margin-top: 30px!important;
+        font-weight: @font-weight-bold;
+        .bank-title{
+            margin-left: 10px;
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 42px;
+            background:url('../../../../../assets/images/CSS-Sprites.jpg') no-repeat;
+            background-size:1950px;
+        }
+        .bank-num{
+            margin-left: 20px;
+        }
+    }
+
+    .weChat-picker {
+        margin-top: 30px;
+        //padding-top: 30px;
+        box-sizing: border-box;
+        .am-list-item {
+            width: 660px;
+            height: 100px;
+            margin: auto;
+            background: @white;
+            // border: 1px solid #e5e5e5;
+            // .hairline('all', #e5e5e5);
+            border-radius: 50px;
+            .am-list-content {
+                font-size: @font-size-30;
+                font-family: @font-family;
+                font-weight: @font-weight-normal;
+                color: @darker-black;
+            }
+            .am-list-arrow {
+                display: none;
+            }
+        }
+    }
+
+    .weChat-inputItem {
+        margin-top: 30px;
+        .am-list-item {
+            width: 660px;
+            height: 100px;
+            margin: auto;
+            background: @white;
+            border: 1px solid #e5e5e5;
+            // .hairline('all', #e5e5e5);
+            border-radius: 50px;
+            display: block;
+            .am-list-line {
+                height: 100%;
+                .fake-input-placeholder {
+                    padding-left: 41px;
+                }
+                input::placeholder {
+                    line-height: 44px;
+                }
+                .fake-input {
+                    padding-left: 30px;
+                    font-size: @font-size-28 !important;
+                    font-family: @font-family !important;
+                    font-weight: @font-weight-normal !important;
+                    color: @darker-black !important;
+                }
+                .fake-input::after {
+                    top: 0 !important;
+                    border-right: 0.03rem solid #7D7D7D !important;
+                }
+            }
+
+        }
+    }
+    .general-other{
+        .am-list-item{
+            border: 1PX solid #e5e5e5;
+        }
+    }
+
+    .weChat-flex {
+        .am-checkbox-agree {
+            margin: 0;
+            padding: 22px 0 43px 0;
+            .am-checkbox-wrapper {
+                position: relative;
+                width: 347px;
+                margin: auto;
+                font-size: @font-size-28;
+                font-family: @font-family;
+                font-weight: @font-weight-normal;
+                color: @link-color;
+
+                .am-checkbox {
+                    width: 30px;
+                    height: 30px;
+                    left: 308px;
+
+                }
+                .am-checkbox-inner {
+                    width: 30px;
+                    height: 30px;
+                    top: 7px;
+                    &::after {
+                        display: none !important;
+                    }
+                }
+                span{
+                    color:black !important;
+                }
+            }
+        }
+
+    }
+    .weChat-button {
+        .important {
+            box-shadow: 0 0 0 0;
+        }
+    }
+    .weChat-record {
+        //position: absolute;
+        //top: 600px;
+        //bottom:0;
+        //width: 100%;
+        margin-top: 70px;
+        &-p {
+            width: 100%;
+            text-align: center;
+            font-size: @font-size-28;
+            font-family: @font-family;
+            font-weight: @font-weight-normal;
+            color: @link-color;
+        }
+    }
+    .am-checkbox.am-checkbox-checked .am-checkbox-inner {
+        border: 4px solid #ffcccc;
+    }
+    .popups{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        background: @light-black;
+        z-index: 300;
+        .popup-wrap{
+            width: 100%;
+            min-height: 8rem;
+            position: absolute;
+            bottom: 0;
+            background: @white;
+            .popup-top{
+                width: 100%;
+                padding: 32px;
+                box-sizing: border-box;
+                border-bottom: @list-border;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .command-left:before {
+                    content: '\E646';
+                    font-size: @font-size-36;
+                    color: #A2A2A2;
+                    font-weight: @font-weight-bold;
+                }
+                .popup-title{
+                    font-size: @font-size-36;
+                    font-weight: @font-weight-bold;
+                }
+                .command-right:before {
+                    content: '\E640';
+                    font-size: @font-size-36;
+                    color: #A2A2A2;
+                    font-weight: @font-weight-bold;
+                }
+            }
+            .popup-bottom{
+                width: 100%;
+                padding-top: 60px;
+                .poupu-pws{
+                    width: 100%;
+                    height: 100px;
+                }
+                .popup-forget{
+                    width: 100%;
+                    margin-top: 60px;
+                    text-align: center;
+                    font-size: @font-size-28;
+                    color: @link-color;
+                }
+            }
+        }
+    }
+    .am-picker-popup-wrap {
+        overflow: inherit!important;
+    }
+}
+

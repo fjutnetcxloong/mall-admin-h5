@@ -1,0 +1,68 @@
+@import "~style";
+.check {
+    .wrapTabNav {
+        margin-bottom: 20px;
+    }
+    .bank-box {
+        position: absolute;
+        top: 108px;
+        bottom: 0;
+        background: @white;
+        width: 100%;
+        .input-field {
+            margin-bottom: 57px;
+            .bank-num, .amount {
+                .hairline('bottom',@to-light-gray)
+            }
+            .bank-num {
+                .am-list-line {
+                    height: 100px;
+                    .am-input-control {
+                        input {
+                            text-align: right;
+                        }
+                        input::placeholder {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+            .amount {
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                padding-right: 30px;
+                line-height: 100px;
+                background: @white;
+                span {
+                    color: @link-color;
+                }
+                .am-list-line::after {
+                    height: 0!important;
+                }
+            }
+            .am-input-label, span {
+                font-size: @font-size-30;
+            }
+        }
+        .hint {
+            color: @dark-gray;
+            text-align: center;
+            padding: 0 43px;
+            margin-bottom: 100px;
+            p:nth-child(1) {
+                font-weight:bold;
+                margin-bottom: 20px;
+            }
+            p:nth-child(2) {
+                line-height: 40px;
+            }
+        }
+        .next {
+            .largeButton();
+            .important;
+            text-align: center;
+            color: @white;
+        }
+    }
+}

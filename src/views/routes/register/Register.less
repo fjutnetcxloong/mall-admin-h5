@@ -1,0 +1,376 @@
+@import "~style";
+.login-modal{
+        width: 580px !important;
+        //overflow-y: scroll;
+        .am-icon{
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+        .am-icon-check-circle{
+            color: red;
+        }
+    .am-modal-content{
+        .logo{
+            width: 100px;
+            height: 100px;
+        }
+        .icon-logo{
+            width: 60px;
+            // background: url('../../../assets/images/wx-icon.png') no-repeat center center;
+        }
+        .user-info{
+            color:@darker-black;
+            font-size: @font-size-24;
+            flex: 1;
+            span{
+                display: inline-block;
+                margin-right: 25px;
+            }
+        }
+        .am-list{
+            height: 650px !important;
+        }
+        .am-list-content{
+            display: flex;
+            line-height: 100px;
+        }
+    }
+    .am-list-body::before, .am-list-line::after, .am-list-body::after {
+        height: 0!important;
+    }
+}
+.login-register {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: @white;
+    .enter-box {
+        padding-bottom: 80px;
+    }
+    .register{
+        background: @white;
+        //height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        .register-icon{
+            width: 420px;
+            height: 420px;
+            margin: 120px auto;
+            .logo-icon{
+                background: url('../../../assets/images/yaomeimei.png') center center no-repeat;
+                margin: auto;
+                background-size: 100% 100%;
+                width: 335px;
+                height: 398px;
+            }
+        }
+        .reg-title{
+            font-size: @font-size-24;
+            font-weight: 400;
+            color: @red;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .register-btn{
+            width: 100%;
+            margin-top: 90px;
+            .am-button{
+                background:linear-gradient(180deg,@fiery-red 0%,@garnet-red 100%) !important;
+                box-shadow:@button-box-shadow !important;
+            }
+        }
+        .vcode-button{
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-between;
+            padding: 0 45px;
+            .pass{
+                color: @fiery-red;
+                font-size: @font-size-30;
+                font-weight:500;
+                width:280px;
+                height:80px;
+                line-height: 80px;
+                border:2px solid @fiery-red;
+                border-radius:40px;
+                text-align: center;
+                .pass-right{
+                    width:310px;
+                }
+            }
+        }
+        .register-bottom {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translate(-50%,0%);
+            width: 100vw;
+        }
+    }
+    .login-code{
+        height: auto;
+        background: @white;
+        .login-title{
+            margin-top: 94px;
+            margin-left: 46px;
+            font-weight: 500;
+            color: @darker-black;
+            font-size: @font-size-48;
+            margin-bottom: 140px;
+        }
+        .login-inp{
+            width: 660px;
+            margin:0 auto;
+            .inp-item{
+                height: 122px;
+                width: 100%;
+                border-bottom: 2px solid @light-gray;
+                padding: 20px 0;
+                box-sizing: border-box;
+                line-height: 122px;
+                display: flex;
+                margin-bottom: 40px;
+                position: relative;
+                .inp-icon-t,.inp-icon-b{
+                    width: 86px;
+                    height: 48px;
+                    border-right: 2px solid #E5E5E5;
+                    padding-left:30px;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    line-height: 48px;
+                    margin-top: 28px;
+                }
+                .icon-box{
+                    line-height: 88px;
+                    .icon-open:before{
+                        content: '\e65f';
+                        color: #FF5774;
+                        margin-left: 60px;
+                    }
+                    .icon-close:before{
+                        content: '\E67b';
+                        color: @light-gray;
+                        margin: 0 30px;
+                    }
+                }
+                .inp-icon-t:before{
+                    color: #D2D2D2;
+                    content: '\e641';
+                }
+                .inp-icon-b:before{
+                    color: #D2D2D2;
+                    content: '\e642';
+                }
+                input::placeholder {
+                    line-height: 47px;
+                }
+                .btn-code{
+                    background: @white;
+                    height: 50px;
+                    width: 24%;
+                    //min-width: 160px;
+                    position: absolute;
+                    right: 16px;
+                    bottom: 20px;
+                    border: 2px solid @gray;
+                    color: @gray;
+                    font-size: @font-size-28;
+                    border-radius: 10px;
+                    .code-text{
+                        position: absolute;
+                        top: -22px;
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+                .highlight {
+                    border: 2px solid @fiery-red;
+                    color: @fiery-red;
+                }
+                .am-button::before {
+                    border: none !important;
+                }
+            }
+            .border-color {
+                border-bottom: 2px solid #FF5774;
+            }
+        }
+        .log-button{
+            margin-top: 84px;
+            margin-bottom: 50px;
+            .large-button {
+                background:linear-gradient(180deg, @fiery-red 0%, @garnet-red 100%)!important;
+                box-shadow: 0 0.04rem 0.35rem 0 @button-shadow-red;
+            }
+        }
+        .thirdparty {
+            //position: absolute;
+            //bottom: 80px;
+            //width: 100%;
+            .others{
+                display: flex;
+                //margin-top: 170px;
+                justify-content: space-around;
+                .line {
+                    width: 100%;
+                    color: @gray;
+                    text-align: center;
+                    font-size: @font-size-26;
+                }
+                .line:before, .line:after {
+                    content: '';
+                    width: 26%;
+                    height: 1px;
+                    display: inline-block;
+                    border: 1px solid @to-light-gray;
+                    vertical-align: middle;
+                    margin: 0 30px;
+                }
+                //.line{
+                //    width: 240px;
+                //    padding-bottom: 10px;
+                //    border-bottom: 1px solid @to-light-gray;
+                //}
+            }
+            .wxLogin{
+                margin: 31px auto 30px;
+                width: 100px;
+                height: 110px;
+                background-size: 1950px!important;
+                background: url("../../../assets/images/CSS-Sprites.jpg") no-repeat -1050px -150px;
+            }
+        }
+        .register-bottom {
+            margin-bottom: 80px;
+        }
+    }
+
+    .icon-weixin:before{
+        content: '\e63e';
+        margin-right: 20px;
+    }
+
+    .register-del{
+        //height: 40px;
+        padding-top: 24px;
+        margin-left: 40px;
+        .del-icon:before{
+            width: 36px;
+            height: 36px;
+            content: '\E67c';
+        }
+    }
+
+    .register-bottom{
+        .register-title{
+            width: 100%;
+            text-align: center;
+            color: @gray;
+            font-size: @font-size-24;
+            .bottom-red{
+                display: inline-block;
+                color: @link-color;
+            }
+        }
+    }
+
+    .checkMethods{
+        display: flex;
+        justify-content: space-between;
+        color: @link-color;
+        padding: 0 45px;
+        font-size: @font-size-28;
+    }
+
+    .am-list-item.am-input-item{
+        padding-left: 16px;
+        flex: 1;
+    }
+    .am-list-item .am-input-control{
+        margin-bottom: -16px;
+    }
+    .am-list-item .am-input-control input {
+        text-align: left;
+    }
+    .am-list-item .am-input-control input::placeholder {
+        text-align: left;
+    }
+    .am-button{
+        text-align: center !important;
+    }
+    .am-list-line::after {
+        height: 0!important;
+    }
+    .am-button-primary::before {
+        height: 0;
+        border: none!important;
+    }
+    
+    .shadow {
+        //display: none;
+        background: rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        .unaccessible {
+            padding: 30px;
+            position: absolute;
+            background: @white;
+            bottom: 0;
+            border-radius: 20px 20px 0 0 ;
+            .icon-close {
+                display: block;
+                text-align: right;
+                margin-bottom: 15px;
+            }
+            .icon-close:before {
+                content: '\E640';
+                font-size: @font-size-36;
+                color: @gray;
+            }
+            .rule {
+                padding: 0 15px;
+                .rule-top {
+                    font-size: @font-size-36;
+                    font-weight:bold;
+                    margin-bottom: 77px;
+                }
+                .rule-bottom {
+                    .details {
+                        font-size: @font-size-30;
+                        color: @darker-black;
+                        margin-bottom: 60px;
+                        letter-spacing: 3px;
+                        text-indent: 2em;
+                    }
+                }
+                .contact-us {
+                    .largeButton();
+                    color: @fiery-red;
+                    border: 1px solid @fiery-red;
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+    
+}
+
+.agreement-leijiang{
+    width: 100% !important;
+    position: absolute;
+    bottom: 0;
+    .am-modal-content{
+        padding-top: 0;
+        .am-modal-body{
+            white-space: pre-wrap;
+            text-align: left;
+        }
+    }
+}

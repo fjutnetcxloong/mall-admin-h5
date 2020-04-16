@@ -1,0 +1,75 @@
+@import "~style";
+
+.footer-bar {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow:0 0 10px 0 @to-light-gray;
+    z-index: 1001;
+    .bar-icon {
+        width: 44px;
+        height: 44px;
+        display: block;
+        margin: 0 auto;
+
+
+        &.home-icon::before{
+            color: @gray;
+            content:'\e64a';
+        }
+        &.home-icon-active:before{
+            color: @fiery-red;
+            content:'\e64a';
+        }
+        &.share-icon::before{
+            color: @gray;
+            content:'\e647';
+        }
+
+        &.share-icon-active::before{
+            color:@fiery-red;
+            content:'\e647'
+        }
+        &.find-icon:before{
+            color: @gray;
+            content:'\e64d'
+        }
+        // {
+        //     background: url(https://zos.alipayobjects.com/rmsportal/psUFoAMjkCcjqtUCNPxB.svg) center center /  30px 30px no-repeat;
+        // }
+
+        &.find-icon-active:before{
+            color:@fiery-red;
+            content: '\e64d';
+        }
+
+        &.im-icon:before{
+            color: #00AEFF;
+            content:'\E679'
+        }
+
+        &.im-icon-active:before{
+            color:#00AEFF;
+            content: '\E679';
+        }
+        // {
+        //     background:url(https://zos.alipayobjects.com/rmsportal/IIRLrXXrFAhXVdhMWgUI.svg) center center /  30px 30px no-repeat;
+        // }
+
+        &.shopCart-icon {
+            background: url(https://zos.alipayobjects.com/rmsportal/sifuoDUQdAFKAVcFGROC.svg) center center /  30px 30px no-repeat;
+        }
+
+        &.shopCart-icon-active {
+            background: url(https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg) center center /  30px 30px no-repeat;
+        }
+
+        &.my-icon {
+            background:url(https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg ) center center /  30px 30px no-repeat;
+        }
+
+        &.my-icon-active {
+            background:url(https://zos.alipayobjects.com/rmsportal/gjpzzcrPMkhfEqgbYvmN.svg ) center center /  30px 30px no-repeat;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+@import "~style";
+.recommender {
+    .wrapTabNav {
+        margin-bottom: 20px;
+    }
+    .recommender-box {
+        //position: absolute;
+        width: 100%;
+        top: 108px;
+        bottom: 0;
+        background: @white;
+        .survey-icon {
+            width: 100%;
+
+        }
+        .survey-icon:after {
+            transform-origin: 0 0 !important;
+            transform:scaleY(1) !important;
+            width: auto !important;
+            height: auto!important;
+            top: 0!important;
+            bottom: auto !important;
+            left: auto !important;
+            background: @white !important;
+            right: 30px!important;
+            color: @fiery-red;
+            font-size: @font-size-48;
+            //position: initial!important;
+            //display: inline!important;
+            content: '\E656'!important;
+        }
+        .manual, .survey-icon {
+            padding: 0 30px;
+            line-height: 100px;
+            font-size: @font-size-36;
+            .hairline('bottom', @to-light-gray);
+            //.hairline('bottom', @to-light-gray);
+        }
+        .am-list {
+            margin-bottom: 40px;
+            .am-list-body {
+                .am-list-item {
+                    padding-left: 0;
+                    height: 100px;
+                    .am-list-line {
+                        padding-left: 30px;
+                        .hairline('bottom', @to-light-gray);
+                    }
+                }
+            }
+            .am-list-body::before, .am-list-body::after, .am-list-line::after {
+                height: 0!important;
+            }
+            .am-list-item .am-input-control input{
+                text-align: right;
+            }
+            .am-list-item .am-input-control input::placeholder{
+                text-align: right;
+            }
+        }
+        .cozy {
+            color: @dark-gray;
+            font-size: @font-size-30;
+            text-align: center;
+            margin-bottom: 100px;
+            p {
+                margin-bottom: 20px;
+            }
+        }
+        .testing {
+            margin-bottom: 52px;
+            .large-button {
+                text-align: center;
+                color: @fiery-red;
+                letter-spacing:8px;
+            }
+        }
+        .next {
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            .general {
+                color: @dark-gray;
+                border: 2px solid @dark-gray!important;
+                line-height: 80px;
+            }
+            .important {
+                line-height: 80px;
+                color: @white;
+            }
+        }
+    }
+
+}

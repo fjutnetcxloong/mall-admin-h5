@@ -1,0 +1,180 @@
+@import "~style";
+
+.am-action-sheet.am-action-sheet-share {
+    background-color: #fff;
+    border-radius: 20px;
+    .am-action-sheet-message{
+        color:#FF2D51;
+    }
+    .am-action-sheet-share-list{
+        width:101%;
+    }
+    .am-action-sheet-share-cancel-button{
+        color:#666666;
+        font-size:30px;
+    }
+}
+//分享图标logo
+.QQ, .VX, .PYQ, .WB {
+    width: 100px;
+    height: 100px;
+    background-size: 1950px!important;
+    background: url("../../../../../assets/images/CSS-Sprites.jpg") no-repeat
+}
+.QQ {
+    background-position: -7.5rem -1.5rem;
+  }
+  .VX {
+    background-position: -10.5rem -1.5rem;
+  }
+  .PYQ {
+    background-position: -6rem -1.5rem;
+  }
+  .WB {
+    background-position: -9rem -1.5rem;
+  }
+.invitation{
+    touch-action: pan-y;
+    height: 100vh;
+    background: @white;
+    .aroundBlank();
+    padding: 0;
+    margin: 0;
+    .wx-share{
+        font-size:40px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .navbar {
+        .blackNav-right .icon-right:before {
+            font-size: @font-size-42;
+        }
+    }
+    .nvb{
+        font-size: @font-size-36;
+        color: @darker-black;
+        font-weight: @font-weight-bold;
+        height: 88px;
+        background: @white;
+    }
+    .slider-frame{
+        overflow: hidden !important;
+    }
+    .black-nav-right{
+        .icon-right{
+            width: 44px;
+            height: 42px;
+        }
+    }
+    .mask{
+        //display: none;
+        width: 480px;
+        padding-top: 60px;
+        margin:0 auto;
+        //height: 780px;
+        border-radius: 20px;
+        background: @white;
+        .mask-img{
+            height: 750px;
+            width: 480px;
+            margin-bottom:80px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .mask-title{
+            .TextareaOverflow(2);
+            font-size: @font-size-30;
+            color: @darker-black;
+            line-height:40px;
+            font-weight: bold;
+            padding: 0 30px;
+            margin-top: 25px;
+        }
+        .mask-price{
+            font-size: @font-size-36;
+            color: @fiery-red;
+            margin-top: 23px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px;
+            img{
+                width: 79px;
+                height: 79px;
+            }
+        }
+    }
+    .button{
+        width: 100%;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        color:@fiery-red !important;
+        font-family: PingFang-SC-Medium;
+        background: @white !important;
+        border: 1px solid @fiery-red !important;
+        // .hairline('all', @fiery-red);
+        border-radius: 0;
+        margin-top:30px !important;
+    }
+    .button.general-other{
+        border: 1PX solid @fiery-red !important;
+        // .hairline('all', @fiery-red);
+    }
+
+    .am-button{
+        border-radius: 50px;
+        .directionalGradation(150deg, @garnet-red, @fiery-red);
+        font-size: @font-size-36;
+        font-family: 'PingFang-SC-Medium';
+        color: @white;
+        text-align: center;
+        height: 100px;
+        width: 660px;
+        line-height:100px;
+        border-width: 2px!important;
+        //font-weight: @font-weight-bold;
+    }
+    .am-action-sheet-share-cancel-button{
+        color: @dark-gray !important;
+    }
+    .am-navbar-left{
+        padding: 0;
+    }
+    .am-button,.am-button-warning {
+        //padding: 60px 45px 0;
+        margin: auto;
+    }
+    .am-button::before {
+        border: none!important;
+        height: 0!important;
+    }
+    .slider-slide {
+        img {
+            margin: 20px auto 40px!important;
+        }
+    }
+}
+html:not([data-scale]) .am-action-sheet-share-list::before {
+    height: 0;
+}
+
+.wx-share-content{
+    height: 100vh !important;
+    .bImage{
+        height: 380px;
+    }
+}
+
+.xuebitu {
+    background: url("../../../../../assets/images/CSS-Sprites.jpg");
+    background-size: 2240px;
+    width: 100px;
+    height: 100px;
+    background-position: 0 0;
+}
+//底部flex布局设置
+.am-action-sheet-share-list{
+    justify-content: space-between;
+}

@@ -1,0 +1,122 @@
+@import "~style";
+.save-success{
+    .bg{
+        width: 252px;
+        height: 100%;
+        margin: 202px auto 40px;
+        .no-order, .no-evaluation, .not-found, .no-template, .no-collection, .no-news, .await, .no-goods, .succeed, .audit-failure, .net-error{
+            //background: url("../../../assets/images/CSS-Sprites-two.png") no-repeat;
+            .spriteFigureTow();
+            width: 309px;
+            height: 296px;
+            background-size: 1750px!important;
+        }
+        .no-order{
+            background-position: -1400px 0;
+        }
+        .no-evaluation {
+            background-position: -350px -350px;
+        }
+        .not-found {
+            background-position: 0 0;
+        }
+        .no-collection {
+            background-position: -350px -700px;
+        }
+        .no-news {
+            background-position: 0 -350px;
+        }
+        .await {
+            background-position: -650px 0;
+        }
+        .no-goods {
+            background-position: -350px 0;
+        }
+        .succeed {
+            background-position: -1000px 0;
+        }
+        .no-customer {
+            background-position: -700px -350px;
+        }
+        .audit-failure {
+            background-position: -1400px -350px;
+        }
+        .net-error {
+            background-position: -1050px -350px;
+        }
+        .server-error {
+            .spriteFigureTow();
+            width: 252px;
+            height: 359px;
+            background-size: 1750px!important;
+            background-position: -375px -1050px;
+            
+        }
+    }
+    .text{
+        text-align: center !important;
+        font-size: @font-size-28;
+        color: @gray;
+        padding: 0 100px;
+    }
+    .am-button{
+        width:280px;
+        height:80px;
+        background:linear-gradient(0deg,@garnet-red 0,@fiery-red 100%);
+        box-shadow:@button-box-shadow;
+        border-radius:200px;
+        margin: 50px auto;
+        line-height: 80px !important;
+        span{
+            display: inline-block;
+            font-size: @font-size-30;
+            color: @white;
+        }
+    }
+    .am-button::before {
+        border: none !important;
+    }
+    .btns{
+        padding:0 60px;
+        margin-top:100px;
+        clear: both;
+        .see-history{
+            float:left;
+            background: #fff;
+            box-shadow:none;
+            span{
+                color:#666666;
+            }
+            border:1px solid #666666;
+        }
+        .goback-order{
+            float:right;
+            background: #fff;
+            box-shadow:none;
+            span{
+                color:#FF2D51;
+            }
+            border:1px solid #FF2D51;
+        }
+    }
+    .btns:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .toast{
+        text-align: center;
+        position: fixed;
+        bottom: 80px;
+        left: 50%;
+        margin-left: -240px;
+        font-size: 28px;
+        color: #666;
+        p{
+            font-size: 24px;
+            line-height: 72px;
+            color: #999;
+        }
+    }
+   
+}

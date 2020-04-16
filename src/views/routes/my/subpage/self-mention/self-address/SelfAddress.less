@@ -1,0 +1,135 @@
+@import "~style";
+.Self-address {
+    .navbar {
+        border-bottom: none;
+        .blackNav-right .icon-right:before {
+            content: '\e63d';
+            font-size: @font-size-42;
+        }
+    }
+
+    .seek {
+        padding: 20px 30px;
+        display: flex;
+        height: 100px;
+        background-color: @white;
+        .am-list-extra, .am-search-cancel{
+            display: none !important;
+        }
+        .am-flexbox-align-center {
+            padding: 0 40px;
+            background: @white;
+            flex: 1;
+            background-color: @back-color;
+            border-radius: 50px;
+            .am-list-item {
+                background-color: @back-color;
+                min-height: 0;
+                .am-list-line {
+                    //border-right: 1px solid #EDEDED;
+                    .hairline('right',#EDEDED);
+                    height: 44px;
+                    margin-right: 20px;
+                    padding-right: 20px;
+                    .am-list-content {
+                        font-size: @font-size-30;
+                        color: @dark-gray;
+                        .am-icon {
+                            vertical-align: bottom;
+                        }
+                    }
+                }
+            }
+            .am-flexbox-item {
+                .am-search {
+                    padding: 0px;
+                    background-color: @back-color;
+                    .am-search-input {
+                        background-color: @back-color;
+                        .am-search-synthetic-ph {
+                            padding-left: 0px;
+                        }
+                        .am-search-value {
+                            padding: 0 56px 0 40px
+                        }
+                    }
+                }
+            }
+        }
+        .cancel {
+            line-height: 64px;
+            margin-left: 33px;
+            color: @fiery-red;
+            font-size: @font-size-30;
+        }
+    }
+
+    .store {
+        margin: 20px 30px 0;
+        background: @white;
+        border-radius: 20px;
+        .common-stores {
+            padding: 29px 30px 30px;
+            //border-bottom: 1px solid #EDEDED;
+            .hairline('bottom',#EDEDED);
+        }
+        .business {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 31px 36px 28px;
+            .business-left {
+                margin-right: 34px;
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+            }
+            .business-right {
+                flex: 1;
+                .shop-name {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 17px;
+                    .shop-name-left {
+                        .appellation {
+                            font-size: @font-size-30;
+                            color: @darker-black;
+                            margin-bottom: 8px;
+                        }
+                        .time {
+                            font-size: @font-size-20;
+                            color: @gray;
+                        }
+                    }
+                    .shop-name-rght {
+                        font-size: @font-size-20;
+                        color: @gray;
+                        line-height: 64px;
+                    }
+                }
+            }
+        }
+        .location {
+            display: flex;
+            .location-left {
+                margin-right: 10px;
+            }
+            .location-left:before {
+                content: '\e648';
+                font-size: @font-size-32;
+                vertical-align: top;
+                color: @fiery-red;
+            }
+            .location-right {
+                font-size: @font-size-24;
+                color: @gray;
+                width: 447px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+.am-search-value::-webkit-input-placeholder {
+    font-size: @font-size-24;
+}

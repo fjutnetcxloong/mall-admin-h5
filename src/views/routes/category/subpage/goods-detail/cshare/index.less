@@ -1,0 +1,261 @@
+@import "~style";
+
+.cshare-wrap {
+    .header {
+        height: 580px;
+        width: 100%;
+        img {
+            width: 100% !important;
+            height: 580px !important;
+        }
+        .go-back {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            background: rgba(67, 67, 67, 0.5);
+            border-radius: 50%;
+        }
+        .go-back::after {
+            content: "\E646";
+            color: #fff;
+        }
+        .more {
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            text-align: center;
+            background: rgba(67, 67, 67, 0.5);
+            border-radius: 50%;
+            color: #fff !important;
+        }
+        // .more::after{
+        //     content:'\E63b';
+        //     color: #fff !important;
+        // }
+    }
+    .cshare-main {
+        padding: 32px;
+        background: #fff;
+        .cshare-pirce {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            .main-price-info {
+                display: flex;
+                .main-symbol {
+                    font-size: 36px;
+                    color: #ff2d51;
+                    align-self: flex-end;
+                }
+                .main-pirce {
+                    font-size: 48px;
+                    color: #ff2d51;
+                }
+                .main-pirce-name {
+                    align-self: center;
+                    width: 78px;
+                    height: 32px;
+                    display: inline-block;
+                    background: rgba(255, 45, 81, 1);
+                    border-radius: 5px;
+                    font-size: 22px;
+                    line-height: 32px;
+                    text-align: center;
+                    color: #fff;
+                    margin: 0 13px 0 18px;
+                }
+                .main-old-pirce {
+                    align-self: center;
+                    color: #999;
+                    font-size: 22px;
+                    span{
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            .main-volume {
+                align-self: center;
+                width: 150px;
+                height: 30px;
+                line-height: 30px;
+                border: 1px solid rgba(255, 45, 81, 1);
+                background: linear-gradient(
+                    0deg,
+                    rgba(255, 45, 81, 1) 0%,
+                    rgba(242, 12, 0, 1) 100%
+                );
+                border-radius: 15px;
+                font-size: 20px;
+                color: #fff;
+                text-align: center;
+            }
+        }
+        .goods-describe {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 26px 0 33px;
+            letter-spacing: 8.8px;
+            text-overflow: -o-ellipsis-lastline;
+            overflow: hidden;
+            text-overflow: ellipsis; // text-overflow css3的属性，当文本溢出时，显示省略号
+            display: -webkit-box;
+            -webkit-line-clamp: 2; // 设置两行文字溢出
+            -webkit-box-orient: vertical;
+        }
+        .coupon {
+            width: 686px;
+            height: 188px;
+            background: url("../../../../../../assets/images/env-bg.jpg")
+                no-repeat;
+            background-size: 100%;
+            background-position: 0 -600px;
+            overflow: hidden;
+            position: relative;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 32px;
+            div {
+                width: 480px;
+                text-align: center;
+                margin-top: 32px;
+                .detail-money {
+                    letter-spacing: 6.6px;
+                    font-weight: bold;
+                    font-size: 54px;
+                    color: #fff;
+                }
+                .detail-title {
+                    color: #fff;
+                }
+                p {
+                    font-size: 24px;
+                    color: #fff;
+                    font-weight: 400;
+                    margin-top:12px;
+                }
+            }
+            .get-right-now {
+                position: absolute;
+                top: 66px;
+                right: 49px;
+                font-size: 26px;
+                color: #fff;
+            }
+        }
+        .cshare-shop {
+            display: flex;
+            justify-content: space-between;
+            .shop-info {
+                position: relative;
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 10px;
+                }
+                .shop-name {
+                    position: absolute;
+                    top: 10px;
+                    left: 122px;
+                    font-weight: bold;
+                    white-space: nowrap;
+                }
+                .shop-start {
+                    position: absolute;
+                    top: 60px;
+                    left: 121px;
+                    white-space: nowrap;
+                    .icon {
+                        font-family: "iconfont";
+                        display: inline-block;
+                        font-size: 24px !important;
+                    }
+                }
+                .icon-tiny:before {
+                    content: "\E637";
+                    color: @duckling-yellow;
+                }
+                .icon-ban:before {
+                    content: "\e638";
+                    color: @duckling-yellow;
+                }
+            }
+            .go-to-shop {
+                width: 140px;
+                height: 50px;
+                background: linear-gradient(
+                    180deg,
+                    rgba(242, 12, 0, 1) 0%,
+                    rgba(255, 45, 81, 1) 100%
+                );
+                border-radius: 25px;
+                font-size: 24px;
+                color: #fff;
+                text-align: center;
+                line-height: 50px;
+            }
+        }
+    }
+    .cshare-goods {
+        margin-top: 20px;
+        background-color: #fff;
+        padding-top: 43px;
+        height: 100%;
+        padding-bottom: 120px;
+        .some-desceribe {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 48px;
+            p {
+                color: #999;
+                font-size: 28px;
+                text-align: center;
+            }
+            span {
+                display: inline-block;
+                width: 120px;
+                height: 2px;
+                background-color: #cccccc;
+                align-self: center;
+            }
+        }
+        .goods {
+            margin: 14px 14px 0 32px;
+            overflow: hidden;
+            .some-goods {
+                width: 216px;
+                margin-right: 18px;
+                margin-top: 18px;
+                float: left;
+                img {
+                    width: 216px;
+                    height: 216px;
+                    border-radius: 6px;
+                }
+                p {
+                    font-size: 24px;
+                    text-overflow: -o-ellipsis-lastline;
+                    overflow: hidden;
+                    text-overflow: ellipsis; // text-overflow css3的属性，当文本溢出时，显示省略号
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2; // 设置两行文字溢出
+                    -webkit-box-orient: vertical;
+                    margin: 11px 0 15px;
+                }
+                .goods-volume {
+                    font-size: 22px;
+                    color: #ff2d51;
+                }
+                .goods-money {
+                    color: #ff2d51;
+                }
+            }
+        }
+    }
+}

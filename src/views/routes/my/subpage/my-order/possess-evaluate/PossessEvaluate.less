@@ -1,0 +1,426 @@
+@import "~style";
+.possess-evaluate {
+    //待评价
+    .wrapTabNav {
+        margin-bottom: 20px;
+        .navbar {
+            border: none;
+        }
+    }
+    .unevaluated-box{
+
+        .unevaluated {
+            background: @white;
+            padding: 31px 31px 29px 50px;
+            margin-bottom: 20px;
+            .shop-lists {
+                overflow: hidden;
+                .shop-name {
+                    display: flex;
+                    font-size: @font-size-30;
+                    box-sizing: border-box;
+                    justify-content: space-between;
+                    .shop-title{
+                        display: flex;
+                        justify-content: left;
+                        font-weight: 500;
+                        img {
+                            width: 72px;
+                            height: 72px;
+                            border-radius: 50%;
+                        }
+                        p {
+                            font-size: 30px;
+                            line-height: 72px;
+                            color: @darker-black;
+                            margin: 0 20px 0 31px;
+                            .TextareaOverflow(1);
+                        }
+                        .enter {
+                            margin-top: 7px;
+                        }
+                        .enter:before {
+                            content: '\E643';
+                            color: @gray;
+                            font-size: @font-size-30;
+                        }
+                    }
+                    .right{
+                        color: @fiery-red;
+                        font-size: @font-size-30;
+                        font-weight:bold;
+                        line-height: 72px;
+                    }
+                }
+                .goods {
+                    margin-top: 30px;
+                    display: flex;
+                    .goods-left {
+                        margin-right: 20px;
+                        display: flex;
+                        img {
+                            border-radius: 20px;
+                            flex: 0 0 240px;
+                            width: 240px;
+                            height: 240px;
+                        }
+                    }
+                    .goods-right {
+                        flex: 1;
+                        padding-top: 14px;
+                        box-sizing: border-box;
+                        height: 170px;
+                        .goods-desc {
+                            font-size: 30px;
+                            display: flex;
+                            justify-content: space-between;
+                            color: @darker-black;
+                            height: 67px;
+                            .desc-title{
+                                width: 245px;
+                                .TextareaOverflow(2);
+                            }
+                        }
+
+                        .goods-sku {
+                            display: flex;
+                            font-size: 20px;
+                            color: @gray;
+                            margin: 11px 0;
+                            justify-content: space-between;
+                            .sku-left {
+                                display: flex;
+                                //justify-content: left;
+                                //flex: 1;
+                                width: 350px;
+                                justify-content: flex-start;
+                                margin-right: 20px;
+                                .goods-size{
+                                    // flex: 1;
+                                    margin: 0 10px;
+                                    .TextareaOverflow(1);
+                                    //margin: 0 15px 10px 15px;
+                                }
+                                .goods-size:nth-child(1) {
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                        .counting {
+                            display: flex;
+                            justify-content: space-between;
+                            .btn-keep {
+                                padding-top: 5px;
+                            }
+                            .counting-right {
+                                font-size: @font-size-20;
+                                color: @gray;
+                                line-height: 34px;
+                            }
+                        }
+
+
+                        .goods-price {
+                            font-size: 36px;
+                            text-align: right;
+                            color: @fiery-red;
+                            margin-top: 40px;
+                        }
+                    }
+                }
+                .shop-bottom{
+                    width: 100%;
+                    .right-bottom{
+                        color: @darker-black;
+                        width: 420px;
+                        float: right;
+                        .total-count{
+                            font-size: 26px;
+                            font-weight: 500;
+                            text-align: right;
+                            span{
+                                color: @fiery-red;
+                                font-weight: normal;
+                            }
+                        }
+                        .total-price{
+                            display: flex;
+                            justify-content: right;
+                            //font-size: @font-size-28;
+                            font-size:26px;
+                            margin-top: 20px;
+                            .total-price-right{
+                                //flex: 1;
+                                text-align: right;
+                                /*width: 240px;*/
+                                overflow: hidden;
+                                white-space: nowrap;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                text-overflow: ellipsis;
+                            }
+                            .total-price-left{
+                                flex: 1;
+                                text-align: right;
+                                line-height: 38px;
+                                margin-right: 20px;
+                            }
+                            .money {
+                                margin-top: 1px;
+                                font-weight: bold;
+                                font-size: @font-size-30;
+                            }
+                        }
+                    }
+                }
+                .buttons{
+                    margin-top: 65px;
+                    display: flex;
+                    justify-content: flex-end;
+                    line-height: 50px;
+                    div{
+                        width: 150px;
+                        height: 50px;
+                        border: 3px solid @dark-gray;
+                        border-radius: 25px;
+                        line-height: 44px;
+                        text-align: center;
+                        font-size: 24px;
+                        color: @dark-gray;
+                        font-weight: 500;
+                    }
+                    .delete-button{
+                        border: none;
+                    }
+                    .evaluate-button{
+                        border-color: @fiery-red;
+                        color: @fiery-red;
+                    }
+                }
+                .drawback{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .am-tabs-default-bar {
+        border-bottom: 1px solid #EDEDED;
+        // .hairline('bottom', #ededed);
+    }
+    .am-tabs-default-bar-tab-active {
+        color: @fiery-red;
+    }
+    .am-tabs-default-bar-underline {
+        border: 4px solid @fiery-red;
+        margin-bottom: -1px;
+        z-index: 1;
+    }
+    .am-tabs-pane-wrap {
+        overflow: hidden;
+    }
+    //已评价
+    .total-box {
+        display: flex;
+        padding: 31px 40px 0 ;
+        flex-wrap: wrap;
+        background: @white;
+        margin-bottom: 20px;
+        .total {
+            margin: 0 40px 30px 0;
+            .content {
+                height: 50px;
+                line-height: 46px;
+                padding: 0 32px;
+                color: @gray;
+                border: 2px solid @gray;
+                border-radius: 100px;
+                font-size: @font-size-24;
+            }
+            .attive{
+                border:2px solid @fiery-red;
+                color:@fiery-red;
+            }
+        }
+    }
+
+    .am-list-view-scrollview {
+        .am-list-body {
+            background-color: transparent;
+        }
+        .am-list-body::before, .am-list-body::after {
+            height: 0!important;
+        }
+    }
+
+    .have-evaluation {
+        margin-bottom: 20px;
+    }
+    .discuss {
+        padding: 44px 30px 25px;
+        background: @white;
+        border-bottom: 1px solid #EDEDED;
+        // .hairline('bottom', #ededed);
+        .discuss-user {
+            display: flex;
+            justify-content: space-between;
+            line-height: 66px;
+            img {
+                width: 66px;
+                height: 66px;
+                border-radius: 50%;
+                margin-right: 21px;
+            }
+            .user-center {
+                flex: 1;
+                color: @darker-black;
+                font-size: @font-size-28;
+                .TextareaOverflow(1);
+                margin-right: 20px;
+            }
+            .user-right {
+                font-size: @font-size-24;
+                color: @fiery-red;
+            }
+        }
+        .discuss-tidings {
+            padding: 38px 0 0 87px;
+            .specs {
+                color: @gray;
+                font-size: @font-size-24;
+                margin-bottom: 25px;
+                span {
+                    display: inline-block;
+                    margin: 0 20px 5px 0;
+                }
+            }
+        }
+        .consult {
+            color: @dark-gray;
+            font-size: @font-size-28;
+            line-height: 36px;
+            margin-bottom: 23px;
+            word-wrap: break-word;
+            overflow:hidden;
+            text-align: left;
+            white-space:normal; 
+            // word-break:break-all;
+            // overflow:hidden;
+            width: 600px;
+        }
+        .picture {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+            img {
+                width: 290px;
+                height: 290px;
+                border-radius: 20px;
+                margin-bottom: 24px;
+            }
+        }
+        .append {
+            padding-left: 20px;
+            font-size: @font-size-28;
+            color: @dark-gray;
+            .append-chase {
+                color: @fiery-red;
+                margin-bottom: 19px;
+            }
+            .append-theory {
+                margin-bottom: 20px;
+            }
+            img {
+                width: 140px;
+                height: 140px;
+                border-radius: 10px;
+                margin-bottom: 19px;
+                margin-right:30px;
+            }
+            .reply {
+                font-size: @font-size-24;
+                margin-bottom: 19px;
+            }
+        }
+
+  }
+  .write-comment {
+    padding: 29px 30px 22px;
+    background: @white;
+    position: relative;
+    .wares {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        img {
+            height: 140px;
+            width: 140px;
+            border-radius: 10px;
+            margin-right: 22px;
+        }
+        .wares-right {
+            margin-right: 34px;
+            color: @darker-black;
+            font-size: @font-size-30;
+            .introduce {
+                width: 490px;
+                margin: 17px 0 45px 0;
+                white-space:nowrap;
+                overflow:hidden;
+                text-overflow:ellipsis;
+
+            }
+        }
+    }
+    .frequency {
+        //height: 50px;
+        line-height: 40px;
+        //line-height: 48px;
+        display: flex;
+        justify-content: space-between;
+        color: @gray;
+        font-size: @font-size-24;
+        //padding-bottom:40px;
+        span {
+            margin-right: 20px;
+        }
+        .depict {
+            border-radius: 100px;
+            text-align: center;
+            //padding: 0 35px;
+            color: @fiery-red;
+            line-height: 30px;
+            border: 2px solid;
+            padding: 4px 20px;
+        }
+        .business{
+            //height:100px;
+            width: 100%;
+            display: flex;
+            p:nth-child(1) {
+                margin-right: 230px;
+            }
+            .icon-tiny:before{
+                content: '\E637';
+                color: @duckling-yellow;
+                font-size: 26px;
+            }
+        }
+     /*   .business p:first-child{
+            position: absolute;
+            margin-right:20px;
+            left:30px;
+            bottom:0px;
+            font-size:28px;
+        }
+        .business p:last-child{
+            position: absolute;
+            right:60px;
+            bottom:0px;
+            font-size:28px;
+        }*/
+    }
+   }
+}
+
+

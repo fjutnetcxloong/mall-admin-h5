@@ -1,0 +1,25 @@
+@import "~style";
+
+.header-bar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+    background-color: @red;
+}
+.popover-icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-top: -6px;
+    transform: scale(0.8,0.8);
+    &-home{
+        background-position: 0 0;
+    }
+    &-share {
+        background-position: -45px 0;
+    }
+    &-my {
+        background-position: -135px 0;
+    }
+}

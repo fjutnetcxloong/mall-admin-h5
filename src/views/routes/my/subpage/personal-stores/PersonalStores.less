@@ -1,0 +1,61 @@
+@import "~style";
+
+.peosonal-store{
+    .shop-main{
+        height:370px;
+        background:url('../../../../../assets//images/bgbgg.png') no-repeat;
+        background-size: 100% 100%; 
+        position: relative;
+        height: 3.7rem;
+        width: 100%;
+        div{
+            padding-top:200px;
+            img{
+                width:160px;
+                height:151px;
+                border-radius:80px;
+                position:absolute;
+                top:30px;
+                left:50%;
+                margin-left:-80px;
+            }
+            p{
+                width:100%;
+                text-align: center;
+                font-size:36px;
+                color:@white;
+            }
+            span{
+                position: absolute;
+                bottom:50px;
+                left:50%;
+                margin-left:-50px;
+                font-size:20px;
+                font-family:PingFang-SC-Medium;
+                font-weight:500;
+                color:#fc3;
+                line-height:30px;
+                display: block;
+                width:90px;
+                height:30px;
+                background:@darker-black;
+                border:1px solid #fc3;
+                // .hairline('all', #fc3);
+                border-radius:4px;
+                text-align: center;
+            }
+        }
+    }
+    .set-shop{
+        .shop-main{
+            width: 100% !important;
+            height: 3.7rem !important;
+            background-size: 21.5rem !important;
+        }
+    }
+    .shop-set:before{
+        content:'\E643';
+        font-size:26px;
+        color:#A0A0A0;
+    }
+}

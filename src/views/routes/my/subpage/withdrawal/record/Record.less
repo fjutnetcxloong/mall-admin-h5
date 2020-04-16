@@ -1,0 +1,54 @@
+@import "~style";
+
+.record {
+    background: @back-color;
+    .record-title {
+        background: @white;
+        margin-bottom: 20px;
+        .am-navbar-left {
+            color: #000000;
+        }
+        .am-navbar-title {
+            width: 161px;
+            height: 35px;
+            font-size: @font-size-38;
+            font-family: @font-family;
+            font-weight: @font-weight-bold;
+            color: @darker-black;
+        }
+    }
+}
+
+.record-list {
+    .am-list-body {
+        width: 100%;
+        height: 150px;
+        padding: 0 31px;
+        display: flex;
+        align-items: center;
+        &:before {
+            display: none !important;
+        }
+        .record-list-left {
+            text-align: left;
+            width: 50%;
+        }
+        .record-list-right {
+            text-align: right;
+            width: 50%;
+        }
+        .list-left-source {
+            font-size: @font-size-30;
+            font-family: @font-family;
+            font-weight: @font-weight-bold;
+            color: @darker-black;
+        }
+        .list-left-time {
+            font-size: @font-size-28;
+            font-family: @font-family;
+            font-weight: @font-weight-normal;
+            color: @dark-gray;
+            margin-top: 22px;
+        }
+    }
+}

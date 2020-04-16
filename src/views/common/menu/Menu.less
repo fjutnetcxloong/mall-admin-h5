@@ -1,0 +1,88 @@
+@import "~style";
+.menu {
+    width: 100px;
+    height: 98px;
+    background: #434343;
+    opacity: 0.9;
+    border-radius: 20px 0 0 20px;
+    font-size: 24px;
+    color: @white;
+    display: flex;
+    text-align: center;
+
+    .icon-left:before {
+        content: '\e646';
+        font-size: 30px;
+        line-height: 98px;
+    }
+
+    .icon-right:before {
+        content: '\e643';
+        font-size: 30px;
+        line-height: 98px;
+    }
+
+    div:nth-child(2) {
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.menu-list {
+    position: fixed;
+    bottom: 25%;
+    // right: -200px;
+    display: flex;
+    //width: 0;
+    z-index: 20;
+    height: 98px;
+    .menu-right {
+        flex: 0 0 200px;
+        width: 200px;
+        background: #434343;
+        opacity: 0.9;
+        font-size: 24px;
+        color: @white;
+        border-radius: 0 0 0 20px;
+        display: flex;
+        padding: 40px 0;
+        align-items: center;
+        height: 180px;
+
+        li {
+            flex: 0 0 100px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            .text {
+                margin-top: 20px;
+                font-size: @font-size-20;
+            }
+        }
+
+        flex-wrap: wrap;
+
+        .icon-home:before {
+            content: '\e64c';
+        }
+
+        .icon-collect:before {
+            content: '\e63a';
+        }
+
+        .icon-cart:before {
+            content: '\e63c';
+        }
+
+        .icon-notice:before {
+            content: '\e64d';
+        }
+    }
+}

@@ -1,0 +1,89 @@
+@import "~style";
+.am-list-view-scrollview {
+    //height: 100% !important;
+    //overflow: initial!important;
+}
+.recommend{
+    background: @back-color;
+    .navbar{
+        height: 88px;
+        color: @darker-black;
+        .am-navbar-title{
+            font-size:@font-size-38;
+            font-family:@font-family;
+            font-weight:@font-weight-bold;
+            color:@darker-black;
+        }
+    }
+    .am-navbar-right,.am-navbar-left {
+        margin-right: 0;
+        padding: 0;
+    }
+    .list-wrap{
+        .aroundBlank();
+        padding: 0;
+        .recommend-list{
+            display: flex;
+            
+            background: @white;
+            border: 1px solid #EDEDED;
+            // .hairline('all', #ededed);
+            border-radius: 20px;
+            margin-top: 20px;
+            .image{
+                margin-right: 35px;
+                width: 308px;
+                height: 308px;
+               img{
+                   width: 308px;
+                   height: 308px;
+                   border-radius: 20px 0 0 20px;
+               }
+            }
+            .desc{
+                padding: 57px 0 0 0;
+                box-sizing: border-box;
+                flex: 1;
+                .desc-title{
+                    font-size: @font-size-30;
+                    line-height: 40px;
+                    font-weight: bold;
+                    color: @darker-black;
+                    font-family: PingFang-SC-Medium;
+                    .TextareaOverflow(2)
+                }
+                .date{
+                    display: flex;
+                    height: 50px;
+                    justify-content: space-between;
+                    color: @gray;
+                    line-height: 50px;
+                    font-size: @font-size-20;
+                    margin-top: 131px;
+                    .time{
+                        margin: 12px 30px 0 0;
+                    }
+                }
+            }
+        }
+        .am-list-body {
+            background-color: transparent;
+        }
+        .am-list-body::before {
+            height: 0;
+        }
+    }
+    .icon-back:before {
+        font-size: 44px;
+        content: '\e646';
+        color: @darker-black;
+    }
+    .icon-share:before {
+        font-size: 30px;
+        content: '\E649';
+        line-height: 20px;
+        color: #E7344F;
+        margin-right: 15px;
+    }
+
+}

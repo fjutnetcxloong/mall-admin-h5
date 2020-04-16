@@ -1,0 +1,180 @@
+@keyframes skelon{
+  0% {background-position: 100% 50%;}
+  100% {background-position: 0 50%;}
+}
+body{
+  margin: 0;
+}
+//列表骨架屏
+.list-content{
+  padding: 0 30px;
+  padding-top: 60px;
+}
+.list-item-container{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.list-item-left{
+  width: 240px;
+  height: 240px;
+  background-color: #F2F2F2;
+  margin-right: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  -webkit-animation: skelon 1.4s ease infinite;
+  animation: skelon 1.4s ease infinite;
+}
+.list-item-right{
+  padding-top: 10px;
+  flex: 1;
+}
+.list-item-right-item{
+  height: 30px;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  -webkit-animation: skelon 1.4s ease infinite;
+  animation: skelon 1.4s ease infinite;
+}
+/* .list-item-right-item:nth-child(1){
+ width: 100%;
+} */
+.list-item-right-item:nth-child(2){
+ margin-top: 12px; 
+ width: 320px;
+}
+.list-item-right-item:nth-child(3){
+ margin-top: 32px; 
+ width: 180px;
+}
+.list-item-right-item:nth-child(4){
+ margin-top: 56px; 
+ width: 100px;
+}
+//详情骨架屏
+.detail-container{
+
+}
+.detail-top{
+  height: 580px;
+  background-color: #F2F2F2;
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  -webkit-animation: skelon 1.4s ease infinite;
+  animation: skelon 1.4s ease infinite;
+}
+.detail-bottom{
+  padding: 32px 30px;
+  background-color: #fff;
+}
+.detail-item-title{
+  width: 200px;
+  /* background-color: #FFCCD4; */
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #FFCCD4 25%, rgb(255, 182, 182) 37%, #FFCCD4 63%);
+  background-size: 400% 100%;
+  -webkit-animation: skelon 1.4s ease infinite;
+  animation: skelon 1.4s ease infinite;
+}
+.detail-item{
+  height: 30px;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  -webkit-animation: skelon 1.4s ease infinite;
+  animation: skelon 1.4s ease infinite;
+}
+.detail-item:nth-child(2){
+  margin-top: 24px;
+}
+.detail-item:nth-child(3){
+  margin-top: 24px;
+  width: 300px;
+}
+.detail-item:nth-child(4){
+  margin-top: 32px;
+  width: 120px;
+}
+.detail-item:nth-child(5){
+  margin-top: 60px;
+  width: 400px;
+}
+.detail-item:nth-child(6){
+  margin-top: 40px;
+  width: 400px;
+}
+.detail-item:nth-child(7){
+  margin-top: 50px;
+  width: 120px;
+}
+.detail-item:nth-child(8){
+  margin-top: 24px;
+  width: 320px;
+}
+.detail-item:nth-child(9){
+  margin-top: 80px;
+  width: 200px;
+}
+//店铺列表骨架屏
+.shop-list-content{
+  padding: 0 30px;
+  padding-top: 60px;
+}
+.shop-list-item{
+  margin-bottom: 80px;
+}
+.shop-list-item div{
+  border-radius: 10px;
+}
+.shop-list-item-top{
+  height: 30px;
+}
+.shop-list-item-top>.item{
+  height: 30px;
+  width: 280px;
+  background-color: #f2f2f2;
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  -webkit-animation: skelon 1.4s ease infinite;
+  animation: skelon 1.4s ease infinite;
+  float: right;
+}
+.shop-list-item-bot{
+  display: flex;
+  justify-content: flex-start;
+}
+.shop-list-item-bot-left{
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  background-color: #f2f2f2;
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  -webkit-animation: skelon 1.4s ease infinite;
+  animation: skelon 1.4s ease infinite;
+}
+.shop-list-item-bot-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.shop-list-item-bot-right-item{
+  height: 30px;
+  background-color: #f2f2f2;
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  -webkit-animation: skelon 1.4s ease infinite;
+  animation: skelon 1.4s ease infinite;
+}
+.shop-list-item-bot-right-item:nth-child(1){
+  width: 180px;
+}
+.shop-list-item-bot-right-item:nth-child(2){
+  width: 480px;
+  margin-top: 16px;
+}

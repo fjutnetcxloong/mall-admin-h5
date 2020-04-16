@@ -1,0 +1,97 @@
+@import "~style";
+
+.my-detailed{
+    .detailed-top{
+        width: 100%;
+        height: 150px;
+        padding: 26px 34px;
+        box-sizing: border-box;
+        background: #FF5774;
+        position: fixed;
+        margin-top: -2px;
+        float: left;
+        .detailed-top-left{
+            height: 100px;
+            float: left;
+            padding-right: 20px;
+            box-sizing: border-box;
+            border-right: 2px solid @white;
+            width: auto;
+            .picker-timer{
+                display: inline-block;
+                width: 100%;
+                color: @white;
+                .timer-month-bot{
+                    margin-top: 10px;
+                    .timer-month{
+                        font-size: @font-size-48;
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+        .detailed-top-right{
+            float: left;
+            margin-left: 40px;
+            .collections{
+                height: 100px;
+                max-width: 2.2rem;
+                overflow: hidden;
+                display: inline-block;
+                color: @white;
+                font-size: @font-size-24;
+                .revenue-expend{
+                    margin-bottom: 32px;
+                }
+                .revenue-money{
+                    font-size: @font-size-36;
+                }
+            }
+            .expend-collections{
+                margin-left: 50px;
+            }
+        }
+    }
+    .detailed-wrap{
+        //position: absolute;
+        top: 110px;
+        bottom: 0;
+        width: 100%;
+        overflow-y: auto;
+        background: @white;
+
+        .detailed-bottom{
+            width: 100%;
+            background: @white;
+            overflow: hidden;
+            padding-top: 150px;
+            .detailed-list{
+                height: 150px;
+                width: 100%;
+                padding: 38px 32px;
+                box-sizing: border-box;
+                border-bottom: @list-border;
+                .list-left{
+                    float: left;
+                }
+                .list-right{
+                    text-align: right;
+                    float: right;
+                }
+                .list-text{
+                    font-weight: @font-weight-bold;
+                    margin-bottom: 18px;
+                }
+                .list-timer{
+                    font-size: @font-size-28;
+                    color: @dark-gray;
+                }
+            }
+        }
+    }
+}
+
+.icon-right:before{
+    content: '\E643';
+    font-size: @font-size-36;
+}

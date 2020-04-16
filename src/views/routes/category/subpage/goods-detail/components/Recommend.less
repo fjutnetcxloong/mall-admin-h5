@@ -1,0 +1,97 @@
+@import "~style";
+
+//店铺推荐商品
+.home-recommends{
+  width: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+  background: @white;
+  .recommend-commodity-names{
+      .mostImportantFont();
+      margin: 30px 0 0 0;
+      color:@darker-black;
+      text-align: left;
+  }
+  .home-recommend-main{
+      width: 100%;
+      display: flex;
+      // padding-left: 20px;
+      overflow-x: visible;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+          display: none;
+      }
+      .home-recommend-individual{
+          width: 30%;
+          margin: 0 12px;
+          margin-top: 40px;
+          .recommend-individual-imgParent{
+              width:200px;
+              height:200px;
+              padding: 28px 21px 27px 29px;
+              margin: auto;
+              background:@white;
+              box-shadow:0 4px 80px 0 rgba(153,153,153,0.2);
+              border-radius:10px;
+              .recommend-individual-img{
+                  width: 150px;
+                  height: 145px;
+              }
+          }
+          .recommend-individual-title{
+              margin: 25px 0 18px 0;
+              overflow : hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2; /* 可以显示的行数，超出部分用...表示*/
+              -webkit-box-orient: vertical;
+              .ImportantFont();
+              text-align: left;
+              color:@darker-black;
+              font-size: @font-size-30;
+              height: 67px;
+              //padding-bottom: 6px;
+          }
+          .recommend-concessional-box{
+              display: flex;
+              justify-content:space-between;
+              align-items:flex-end;
+              .recommend-concessional-rate{
+                  width: 60%;
+                  .mostImportantFont;
+                  color:@crimson-red;
+                  margin-bottom: 15px;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  &:before {
+                      content: '￥';
+                      font-size: 24px;
+                  }
+              }
+              .recommend-original-price{
+                  width: 40%;
+                  .descriptionAuxiliaryFont();
+                  text-align: right;
+                  text-decoration:line-through;
+                  color:@gray;
+                  margin-bottom: 15px;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+              }
+          }
+          .recommend-accounting-volume{
+              display: inline-block;
+              padding:5px 10px;
+              text-align: center;
+              //background:linear-gradient(90deg,@fiery-red 0%,@garnet-red 100%);
+              .directionalGradation(90deg, @fiery-red, @garnet-red);
+              //box-shadow:0 4px 18px 0 rgba(242,13,3,0.3);
+              border-radius:50px;
+              font-size:20px;
+              color:@white;
+          }
+      }
+  }
+}
